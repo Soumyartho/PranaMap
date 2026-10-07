@@ -1,0 +1,119 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@font-face {
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Variable.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-VariableItalic.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gambetta";
+  src: url("/fonts/Gambetta-Variable.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gambetta";
+  src: url("/fonts/Gambetta-VariableItalic.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Palette: #000000 · #830000 · #BC0202 · #FF0000, plus a warm paper for text. */
+@theme {
+  --color-ink: #000000;
+  --color-blood: #830000;
+  --color-crimson: #bc0202;
+  --color-signal: #ff0000;
+  --color-paper: #f4efe9;
+  --color-mute: #a39d97;
+  --color-line: #2a2523;
+
+  --font-display: "General Sans", "Arial Black", Arial, sans-serif;
+  --font-serif: "Gambetta", Georgia, "Times New Roman", serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html,
+  body {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    overflow-x: clip;
+  }
+  body {
+    font-family: var(--font-serif);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    text-wrap: balance;
+  }
+  ::selection {
+    background: var(--color-signal);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 4px;
+  }
+}
+
+/* Scroll reveal: elements rise and fade in once they enter the viewport. */
+[data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition:
+    opacity 900ms var(--ease-out-expo),
+    transform 900ms var(--ease-out-expo);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+[data-reveal="in"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Scroll-scrubbed words: each word's brightness follows scroll position. */
+.scrub-word {
+  opacity: calc(0.14 + 0.86 * var(--w, 0));
+  transition: opacity 120ms linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .scrub-word {
+    opacity: 1;
+  }
+}
+
+/* GlyphPortal captions: small tracked caps in the display face. */
+.portal [data-gp-caption] {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  inset: auto clamp(20px, 6%, 80px) clamp(28px, 7%, 64px);
+}
+.portal [data-gp-enter] span {
+  color: var(--color-signal);
+}
