@@ -121,7 +121,11 @@ export default function GlyphPortal({
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d", { willReadFrequently: true });
     let disposed = false, raf = 0, dirty = true, active = true, ready = false;
-    const mountedAt = performance.now();
+    // The stall clock runs only while the page can render: a tab opened in the background
+    // gets no frames at all, which is not a hung font.
+    let mountedAt = performance.now();
+    const onVisible = () => { if (document.visibilityState === "visible" && !browserFrameSeen) mountedAt = performance.now(); };
+    document.addEventListener("visibilitychange", onVisible);
     let browserFrameSeen = false, stalled = false;
     let W = 1, H = 1, travel = 1, startScale = 1, endScale = 1;
     let center = { x: 0, y: 0 }, target: Ink | null = null;
@@ -276,8 +280,11 @@ export default function GlyphPortal({
       if (dirty) { dirty = false; layout(); }
       if (ready) paint(position());
     };
-    const schedule = () => { if (!raf && active) raf = requestAnimationFrame(frame); };
-    const resize = () => { cancelAnimationFrame(raf); dirty = true; frame(); };
+    // Until the first browser frame arrives, frames are requested even for an off-screen portal:
+    // that frame is the stall probe, and a portal further down the page would otherwise get it
+    // only when the reader scrolls there, long past the stall limit, and stay static for good.
+    const schedule = () => { if (!raf && (active || !browserFrameSeen)) raf = requestAnimationFrame(frame); };
+    const resize = () => { cancelAnimationFrame(raf); raf = 0; dirty = true; frame(); if (!browserFrameSeen) schedule(); };
     const scroll = () => schedule();
     const choose = (event: Event) => {
       if (!choosing || position() >= .04) return;
@@ -310,7 +317,8 @@ export default function GlyphPortal({
     const visibility = new IntersectionObserver(([entry]) => {
       active = entry.isIntersecting;
       if (active) { dirty = true; schedule(); }
-      else if (raf) { cancelAnimationFrame(raf); raf = 0; }
+      // Never cancel the stall probe (see schedule).
+      else if (raf && browserFrameSeen) { cancelAnimationFrame(raf); raf = 0; }
     }, { root, rootMargin: "100% 0px" });
     visibility.observe(section);
     (root ?? window).addEventListener("scroll", scroll, { passive: true });
@@ -330,6 +338,7 @@ export default function GlyphPortal({
       window.removeEventListener("resize", resize);
       window.visualViewport?.removeEventListener("resize", resize);
       motion.removeEventListener("change", resize);
+      document.removeEventListener("visibilitychange", onVisible);
       choices.removeEventListener("pointerover", choose);
       choices.removeEventListener("click", choose);
       choices.removeEventListener("focusin", choose);
