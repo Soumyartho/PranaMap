@@ -1,0 +1,4 @@
+# Training only. The API and the phone run the exported model with no ML dependencies.
+-r requirements.txt
+numpy>=2.1
+scikit-learn>=1.5

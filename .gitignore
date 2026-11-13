@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/pranamap.db*
+backend/.env
+.env
+backend/data/media/
+frontend/tests/e2e/.data/
+frontend/test-results/
+frontend/playwright-report/

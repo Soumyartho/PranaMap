@@ -1,0 +1,338 @@
+{
+ "name": "pranamap-ncd-risk",
+ "version": "1.0.0-synthetic",
+ "created": "2026-11-12",
+ "kind": "logistic_regression_standardised",
+ "trained_on": {
+  "source": "synthetic-cohort-1.0",
+  "config": {
+   "n": 40000,
+   "seed": 2026,
+   "diabetes_prevalence": 0.13,
+   "hypertension_prevalence": 0.35,
+   "diagnosed_share": 0.5
+  },
+  "real_data": false
+ },
+ "validated": false,
+ "deployment_mode": "shadow",
+ "intended_use": "Estimate the probability that a screened adult (30+) without a known diagnosis has diabetes or hypertension, to rank follow-up. Decision support for trained health workers; never a diagnosis; never applied to children.",
+ "features": [
+  "age",
+  "male",
+  "bmi",
+  "bmi_missing",
+  "waist",
+  "waist_missing",
+  "inactivity",
+  "fh_diabetes",
+  "fh_heart_or_bp",
+  "tobacco_daily",
+  "tobacco_any",
+  "alcohol_daily",
+  "sbp",
+  "dbp",
+  "bp_missing",
+  "two_readings",
+  "glucose_random",
+  "glucose_fasting",
+  "glucose_missing",
+  "diabetes_symptoms"
+ ],
+ "impute": {
+  "age": 50.709259,
+  "male": 0.502991,
+  "bmi": 23.245019,
+  "bmi_missing": 0.450142,
+  "waist": 84.247921,
+  "waist_missing": 0.146118,
+  "inactivity": 1.351033,
+  "fh_diabetes": 0.280306,
+  "fh_heart_or_bp": 0.248504,
+  "tobacco_daily": 0.239423,
+  "tobacco_any": 0.35438,
+  "alcohol_daily": 0.066417,
+  "sbp": 137.582692,
+  "dbp": 87.577208,
+  "bp_missing": 0.0,
+  "two_readings": 0.700321,
+  "glucose_random": 110.0,
+  "glucose_fasting": 90.0,
+  "glucose_missing": 0.452422,
+  "diabetes_symptoms": 0.142201
+ },
+ "scale": {
+  "age": [
+   50.709259,
+   13.334648
+  ],
+  "male": [
+   0.502991,
+   0.499991
+  ],
+  "bmi": [
+   23.245019,
+   2.707435
+  ],
+  "bmi_missing": [
+   0.450142,
+   0.497508
+  ],
+  "waist": [
+   84.247921,
+   9.097095
+  ],
+  "waist_missing": [
+   0.146118,
+   0.353225
+  ],
+  "inactivity": [
+   1.351033,
+   0.99516
+  ],
+  "fh_diabetes": [
+   0.280306,
+   0.532181
+  ],
+  "fh_heart_or_bp": [
+   0.248504,
+   0.432146
+  ],
+  "tobacco_daily": [
+   0.239423,
+   0.426731
+  ],
+  "tobacco_any": [
+   0.35438,
+   0.478325
+  ],
+  "alcohol_daily": [
+   0.066417,
+   0.24901
+  ],
+  "sbp": [
+   137.582692,
+   18.786728
+  ],
+  "dbp": [
+   87.577208,
+   11.808878
+  ],
+  "bp_missing": [
+   0.0,
+   1.0
+  ],
+  "two_readings": [
+   0.700321,
+   0.458118
+  ],
+  "glucose_random": [
+   119.947009,
+   31.466555
+  ],
+  "glucose_fasting": [
+   91.023575,
+   8.976624
+  ],
+  "glucose_missing": [
+   0.452422,
+   0.497731
+  ],
+  "diabetes_symptoms": [
+   0.142201,
+   0.462065
+  ]
+ },
+ "targets": {
+  "diabetes": {
+   "excludes": "known_diabetes",
+   "intercept": -4.138309,
+   "coef": {
+    "age": 0.71119,
+    "male": 0.013175,
+    "bmi": 0.128923,
+    "bmi_missing": 0.021556,
+    "waist": 0.231707,
+    "waist_missing": -0.045457,
+    "inactivity": 0.148735,
+    "fh_diabetes": 0.369409,
+    "fh_heart_or_bp": -0.013736,
+    "tobacco_daily": 0.0422,
+    "tobacco_any": -0.075158,
+    "alcohol_daily": -0.034191,
+    "sbp": -0.04194,
+    "dbp": 0.027906,
+    "bp_missing": 0.0,
+    "two_readings": -0.025676,
+    "glucose_random": 2.632735,
+    "glucose_fasting": 1.130108,
+    "glucose_missing": 1.693138,
+    "diabetes_symptoms": 1.041288
+   },
+   "threshold": 0.0275,
+   "metrics": {
+    "n_train": 26293,
+    "n_test": 5612,
+    "prevalence_test": 0.0688,
+    "auc": 0.933,
+    "brier": 0.0283,
+    "in_the_large": 0.0019,
+    "slope": 0.971,
+    "model_at_threshold": {
+     "referral_rate": 0.2867,
+     "sensitivity": 0.8938,
+     "specificity": 0.7581,
+     "ppv": 0.2144
+    },
+    "guideline_baseline": {
+     "referral_rate": 0.2978,
+     "sensitivity": 0.8031,
+     "specificity": 0.7396,
+     "ppv": 0.1855
+    }
+   },
+   "fairness": {
+    "female": {
+     "n": 2758,
+     "prevalence": 0.0812,
+     "auc": 0.929,
+     "brier": 0.0323,
+     "in_the_large": 0.0072,
+     "slope": 0.96,
+     "sensitivity_at_threshold": 0.8839
+    },
+    "male": {
+     "n": 2854,
+     "prevalence": 0.0568,
+     "auc": 0.9385,
+     "brier": 0.0244,
+     "in_the_large": -0.0033,
+     "slope": 0.977,
+     "sensitivity_at_threshold": 0.9074
+    },
+    "age_30_44": {
+     "n": 2296,
+     "prevalence": 0.0357,
+     "auc": 0.9151,
+     "brier": 0.0158,
+     "in_the_large": 0.0041,
+     "slope": 1.098,
+     "sensitivity_at_threshold": 0.7073
+    },
+    "age_45_59": {
+     "n": 2160,
+     "prevalence": 0.0616,
+     "auc": 0.9217,
+     "brier": 0.0269,
+     "in_the_large": 0.0018,
+     "slope": 0.995,
+     "sensitivity_at_threshold": 0.8797
+    },
+    "age_60_plus": {
+     "n": 1156,
+     "prevalence": 0.1479,
+     "auc": 0.9214,
+     "brier": 0.0558,
+     "in_the_large": -0.0023,
+     "slope": 0.886,
+     "sensitivity_at_threshold": 0.9942
+    }
+   }
+  },
+  "hypertension": {
+   "excludes": "known_hypertension",
+   "intercept": -1.702011,
+   "coef": {
+    "age": 0.373119,
+    "male": -0.01343,
+    "bmi": 0.214932,
+    "bmi_missing": -0.02459,
+    "waist": 0.184601,
+    "waist_missing": -0.0053,
+    "inactivity": -0.032594,
+    "fh_diabetes": -0.019336,
+    "fh_heart_or_bp": 0.210955,
+    "tobacco_daily": 0.092508,
+    "tobacco_any": -0.060617,
+    "alcohol_daily": 0.037022,
+    "sbp": 2.593629,
+    "dbp": 0.997852,
+    "bp_missing": 0.0,
+    "two_readings": 0.029686,
+    "glucose_random": -0.036358,
+    "glucose_fasting": -0.005168,
+    "glucose_missing": -0.012521,
+    "diabetes_symptoms": 0.042916
+   },
+   "threshold": 0.0827,
+   "metrics": {
+    "n_train": 25162,
+    "n_test": 5374,
+    "prevalence_test": 0.2761,
+    "auc": 0.9566,
+    "brier": 0.0672,
+    "in_the_large": 0.0008,
+    "slope": 1.012,
+    "model_at_threshold": {
+     "referral_rate": 0.4606,
+     "sensitivity": 0.9555,
+     "specificity": 0.7283,
+     "ppv": 0.5729
+    },
+    "guideline_baseline": {
+     "referral_rate": 0.4579,
+     "sensitivity": 0.9367,
+     "specificity": 0.7247,
+     "ppv": 0.5648
+    }
+   },
+   "fairness": {
+    "female": {
+     "n": 2646,
+     "prevalence": 0.2789,
+     "auc": 0.9574,
+     "brier": 0.0662,
+     "in_the_large": -0.0027,
+     "slope": 1.029,
+     "sensitivity_at_threshold": 0.9593
+    },
+    "male": {
+     "n": 2728,
+     "prevalence": 0.2735,
+     "auc": 0.9559,
+     "brier": 0.0682,
+     "in_the_large": 0.0043,
+     "slope": 0.997,
+     "sensitivity_at_threshold": 0.9517
+    },
+    "age_30_44": {
+     "n": 2231,
+     "prevalence": 0.1466,
+     "auc": 0.9651,
+     "brier": 0.0423,
+     "in_the_large": -0.0011,
+     "slope": 1.13,
+     "sensitivity_at_threshold": 0.9419
+    },
+    "age_45_59": {
+     "n": 2067,
+     "prevalence": 0.2729,
+     "auc": 0.9483,
+     "brier": 0.0709,
+     "in_the_large": 0.0012,
+     "slope": 1.01,
+     "sensitivity_at_threshold": 0.945
+    },
+    "age_60_plus": {
+     "n": 1076,
+     "prevalence": 0.5511,
+     "auc": 0.9204,
+     "brier": 0.1115,
+     "in_the_large": 0.0042,
+     "slope": 0.888,
+     "sensitivity_at_threshold": 0.973
+    }
+   }
+  }
+ }
+}

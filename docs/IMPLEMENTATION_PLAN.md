@@ -1,5 +1,46 @@
 # PranaMap — Implementation Plan
 
+## Status (13 November 2026)
+
+**Built and tested end to end** on a synthetic block of 12 villages and about 1,100 people: the five-step loop of
+capture, score, route, follow through and map. 262 backend tests, 712 frontend unit tests and an automated browser
+suite run in CI. The browser suite covers airplane-mode screening, sync, the emergency path, photo OCR, the MO
+dashboard, the doctor closing the loop, and a CPU-throttled performance budget.
+
+| Brief item | Status |
+|---|---|
+| Risk-assessment engine for minimal training | Done. CBAC, IDRS, NP-NCD BP staging, WHO Hb thresholds and the WHO TB four-symptom screen, with red-flag rules first. CVD is the **WHO 2019 non-laboratory model**: sex-specific CHD and stroke Cox models, South Asia recalibration. It matches the reference implementation on 200 cases in both Python and TypeScript. |
+| Explainable output | Done. Each condition returns a band, a 0–100 score (CVD: the 10-year risk), its top 3 drivers, an action, a confidence level and a "what would sharpen this" hint. Shown as the Prana Ring, the why bars and a what-if ghost ring. |
+| ML layer | Done, in **shadow mode**. A glass-box logistic model for undiagnosed diabetes and hypertension, exported to JSON and run identically on the phone and the server. It has a model card (`docs/models/ncd_risk.md`) with calibration, fairness by sex and age, and known findings. The PHC monitors it on confirmed outcomes: agreement κ, a reliability chart and input drift. It changes no decision until validated (`validated=false` forces shadow mode). It is trained on a synthetic cohort, so a real one (NFHS-5/LASI or the pilot's outcomes) is the path to validation. |
+| Offline-first PWA with sync | Done. IndexedDB records are AES-GCM encrypted with a PIN-derived key. The outbox uses UUIDv7 events and idempotent server apply. The service worker precaches the app. Initial load is 168 KB gzipped (CI budget 180 KB). |
+| Teleconsult booking with nearest capable doctor | Done. Capacity-aware routing, clinic-hour slots, teleconsult fallback, audio-first Jitsi links. The ASHA can record a 60-second voice note for the doctor, deleted after 60 days. |
+| PHC / district dashboard | Done. Loop-closure rate, KPIs, H3 hexagon map with small-count suppression, triage board, referral tracker, outbreak radar, blind spots and model monitoring. The district view carries no names. |
+| Multilingual, voice-first | Done for en, hi and bn. **Offline speech recognition**: IndicConformer (hi, bn) and Whisper (en) run on the phone in a Web Worker after a one-time download from Settings. Bhashini is the online fallback, behind the API so the key stays server-side, and the browser recogniser is the last resort. Number parsing covers Hindi/Bengali number words, "साढ़े", "দেড়শো" and mixed digits. Translation QA in CI checks keys, placeholders, script and FAQ numbers. |
+| Voice / OCR for vitals | Done. Voice (above); **camera OCR** of seven-segment BP, glucose and oximeter displays, running on the phone with a drag-to-frame crop; **Bluetooth** BP cuffs and pulse oximeters over the standard GATT profiles. Every captured value is read back for confirmation. |
+| Encrypted storage, ABDM interoperability | Encryption done. FHIR R4 export done. ABHA numbers are captured and format-validated (14 digits or an @abdm address), with an ABDM gateway session client ready for sandbox credentials. |
+| Automated alert to the nearest PHC | Done. New-flag and emergency alerts, an escalation ladder (ASHA → MO → DHO), no-show rescue. **SMS and WhatsApp**: DLT-compliant templates in 3 languages, Twilio and Exotel SMS, and WhatsApp Cloud template messages. A deduplicated outbox retries with backoff and checks consent before sending. Messages are simulated until credentials are set. |
+| Regional-language chatbot | Done. Emergency phrases first in all three languages, then retrieval over a reviewed FAQ pack, offline on the phone. |
+
+**Needs something outside the code:**
+- **Credentials** (adapters built and tested against recorded API shapes; each switches on through `backend/.env`):
+  - Bhashini (bhashini.gov.in);
+  - Twilio or Exotel, plus DLT registration of the templates;
+  - WhatsApp Business (Meta) with approved templates;
+  - ABDM sandbox (sandbox.abdm.gov.in).
+- **People:**
+  - A doctor's sign-off on every red-flag rule, threshold and advice text.
+  - Native Hindi and Bengali reviewers with health-worker experience for `docs/translation-review.csv`.
+  - A field test on a low-end Android phone ([docs/PHONE_TESTING.md](PHONE_TESTING.md)).
+- **Data:** a real cohort with confirmed outcomes to train and validate the ML model before it leaves shadow mode.
+
+**Not built:**
+- OTP consent confirmation on sync and remote key revocation for a lost phone.
+- IVR.
+- Pre-recorded audio prompt packs. Prompts use the phone's text-to-speech.
+- A Postgres deployment. The models are portable; set `PRANAMAP_DATABASE_URL`.
+
+---
+
 Goal: demo the full closed loop (Capture → Score → Route → Follow-through → Map) offline-first, on a synthetic village, for IEMH4-HC-01.
 North-star metric: share of flagged high-risk people who complete a visit within 14 days.
 

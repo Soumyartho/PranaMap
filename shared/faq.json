@@ -1,0 +1,243 @@
+{
+  "version": "0.1.0",
+  "note": "Health-education answers for the PranaMap triage chatbot. Content is general public-health guidance and must be reviewed by a doctor and native Hindi/Bengali speakers before field use.",
+  "emergency": {
+    "keywords": {
+      "en": ["chest pain", "heart attack", "can't breathe", "cannot breathe", "not breathing", "unconscious", "fainted", "fits", "seizure", "convulsion", "stroke", "face droop", "slurred speech", "arm weak", "bleeding in pregnancy", "pregnant bleeding", "very high fever with stiff neck", "snake bite", "poison"],
+      "hi": ["सीने में दर्द", "छाती में दर्द", "दिल का दौरा", "सांस नहीं", "सांस लेने में तकलीफ", "बेहोश", "दौरा पड़", "मिर्गी", "लकवा", "मुंह टेढ़ा", "बोलने में दिक्कत", "गर्भ में खून", "प्रेग्नेंसी में खून", "सांप ने काटा", "जहर"],
+      "bn": ["বুকে ব্যথা", "হার্ট অ্যাটাক", "শ্বাস নিতে পারছে না", "শ্বাসকষ্ট", "অজ্ঞান", "খিঁচুনি", "স্ট্রোক", "মুখ বেঁকে", "কথা জড়িয়ে", "গর্ভাবস্থায় রক্তপাত", "সাপে কামড়", "বিষ"]
+    },
+    "answer": {
+      "en": "This may be an emergency. Call 108 for a free ambulance now and tell your ASHA or ANM. Do not wait for the chat.",
+      "hi": "यह आपातकाल हो सकता है। अभी 108 पर मुफ्त एम्बुलेंस के लिए कॉल करें और अपनी आशा या एएनएम को बताएं। चैट का इंतज़ार न करें।",
+      "bn": "এটি জরুরি অবস্থা হতে পারে। এখনই বিনামূল্যে অ্যাম্বুলেন্সের জন্য 108 নম্বরে ফোন করুন এবং আপনার আশা বা এএনএম-কে জানান। চ্যাটের জন্য অপেক্ষা করবেন না।"
+    }
+  },
+  "fallback": {
+    "en": "I don't have a safe answer for that. Please ask your ASHA, or book a free teleconsult at your nearest Ayushman Arogya Mandir.",
+    "hi": "इसका सुरक्षित जवाब मेरे पास नहीं है। कृपया अपनी आशा से पूछें, या नज़दीकी आयुष्मान आरोग्य मंदिर में मुफ्त टेली-परामर्श बुक करें।",
+    "bn": "এর নিরাপদ উত্তর আমার কাছে নেই। আপনার আশাকে জিজ্ঞাসা করুন, অথবা নিকটতম আয়ুষ্মান আরোগ্য মন্দিরে বিনামূল্যে টেলি-পরামর্শ বুক করুন।"
+  },
+  "items": [
+    {
+      "id": "bp_what",
+      "keywords": {"en": ["blood pressure", "bp", "hypertension", "high bp"], "hi": ["ब्लड प्रेशर", "बीपी", "रक्तचाप", "हाई बीपी"], "bn": ["রক্তচাপ", "ব্লাড প্রেসার", "বিপি", "হাই প্রেসার", "উচ্চ রক্তচাপ"]},
+      "q": {"en": "What is high blood pressure?", "hi": "हाई ब्लड प्रेशर क्या है?", "bn": "উচ্চ রক্তচাপ কী?"},
+      "a": {
+        "en": "Blood pressure of 140/90 or more on repeat checks is high blood pressure. It often has no symptoms but can cause stroke, heart attack and kidney damage. Get it checked every year after age 30.",
+        "hi": "बार-बार जांच में 140/90 या उससे ज़्यादा ब्लड प्रेशर को हाई ब्लड प्रेशर कहते हैं। अक्सर इसके लक्षण नहीं होते, पर इससे लकवा, दिल का दौरा और किडनी खराब हो सकती है। 30 साल के बाद हर साल जांच कराएं।",
+        "bn": "বারবার মাপলে রক্তচাপ 140/90 বা তার বেশি হলে তাকে উচ্চ রক্তচাপ বলে। প্রায়ই কোনো লক্ষণ থাকে না, কিন্তু এতে স্ট্রোক, হার্ট অ্যাটাক ও কিডনির ক্ষতি হতে পারে। 30 বছর বয়সের পর প্রতি বছর মাপান।"
+      },
+      "source": "NP-NCD operational guidelines"
+    },
+    {
+      "id": "bp_lower",
+      "keywords": {"en": ["lower bp", "reduce blood pressure", "salt", "control bp"], "hi": ["नमक", "बीपी कम", "ब्लड प्रेशर कम"], "bn": ["লবণ", "প্রেসার কমা", "রক্তচাপ কমা", "বিপি কমা"]},
+      "q": {"en": "How can I lower my blood pressure?", "hi": "ब्लड प्रेशर कैसे कम करें?", "bn": "রক্তচাপ কীভাবে কমাব?"},
+      "a": {
+        "en": "Eat less salt (under one teaspoon a day, avoid papad, pickles and packaged snacks), walk briskly 30 minutes a day, stop tobacco and alcohol, and keep a healthy weight. If medicine is prescribed, take it every day.",
+        "hi": "नमक कम खाएं (दिन में एक चम्मच से कम; पापड़, अचार और पैकेट वाले नमकीन से बचें), रोज़ 30 मिनट तेज़ चलें, तंबाकू और शराब छोड़ें, और वज़न ठीक रखें। दवा दी गई हो तो रोज़ लें।",
+        "bn": "লবণ কম খান (দিনে এক চামচের কম; পাঁপড়, আচার ও প্যাকেটের নোনতা খাবার এড়িয়ে চলুন), রোজ 30 মিনিট জোরে হাঁটুন, তামাক ও মদ ছাড়ুন, ওজন ঠিক রাখুন। ওষুধ দেওয়া হলে রোজ খান।"
+      },
+      "source": "NP-NCD lifestyle advice"
+    },
+    {
+      "id": "medicine_daily",
+      "keywords": {"en": ["stop medicine", "feel fine", "skip tablet", "medicine daily"], "hi": ["दवा बंद", "दवा छोड़", "रोज़ दवा"], "bn": ["ওষুধ বন্ধ", "ওষুধ ছেড়ে", "রোজ ওষুধ"]},
+      "q": {"en": "Can I stop my BP or sugar medicine when I feel fine?", "hi": "ठीक लगने पर क्या बीपी या शुगर की दवा बंद कर सकते हैं?", "bn": "ভালো লাগলে কি প্রেসার বা সুগারের ওষুধ বন্ধ করতে পারি?"},
+      "a": {
+        "en": "No. Feeling fine usually means the medicine is working. Never stop it without asking the doctor. Medicines for BP and diabetes are free at government health centres.",
+        "hi": "नहीं। ठीक लगने का मतलब अक्सर यही है कि दवा काम कर रही है। डॉक्टर से पूछे बिना दवा कभी बंद न करें। बीपी और शुगर की दवा सरकारी स्वास्थ्य केंद्र पर मुफ्त मिलती है।",
+        "bn": "না। ভালো লাগার মানে সাধারণত ওষুধ কাজ করছে। ডাক্তারকে না জিজ্ঞাসা করে কখনো ওষুধ বন্ধ করবেন না। প্রেসার ও সুগারের ওষুধ সরকারি স্বাস্থ্যকেন্দ্রে বিনামূল্যে পাওয়া যায়।"
+      },
+      "source": "NP-NCD; Free Drugs Service Initiative"
+    },
+    {
+      "id": "diabetes_signs",
+      "keywords": {"en": ["diabetes", "sugar", "thirst", "urinate", "frequent urination"], "hi": ["डायबिटीज", "शुगर", "मधुमेह", "प्यास", "बार-बार पेशाब"], "bn": ["ডায়াবেটিস", "সুগার", "মধুমেহ", "তেষ্টা", "বারবার প্রস্রাব"]},
+      "q": {"en": "What are the signs of diabetes?", "hi": "डायबिटीज के लक्षण क्या हैं?", "bn": "ডায়াবেটিসের লক্ষণ কী?"},
+      "a": {
+        "en": "Common signs are a lot of thirst, passing urine often, tiredness, wounds that heal slowly, blurred vision and tingling in the feet. Many people have no signs at all, so a blood sugar test is the only way to know.",
+        "hi": "आम लक्षण हैं: बहुत प्यास लगना, बार-बार पेशाब आना, थकान, घाव का देर से भरना, धुंधला दिखना और पैरों में झनझनाहट। कई लोगों में कोई लक्षण नहीं होता, इसलिए खून में शुगर की जांच ही पक्का तरीका है।",
+        "bn": "সাধারণ লক্ষণ: খুব তেষ্টা, বারবার প্রস্রাব, ক্লান্তি, ঘা দেরিতে শুকানো, ঝাপসা দেখা ও পায়ে ঝিনঝিন। অনেকের কোনো লক্ষণই থাকে না, তাই রক্তে সুগার পরীক্ষাই জানার একমাত্র উপায়।"
+      },
+      "source": "NP-NCD operational guidelines"
+    },
+    {
+      "id": "prediabetes",
+      "keywords": {"en": ["prediabetes", "borderline sugar", "pre-diabetes", "reverse diabetes"], "hi": ["प्री-डायबिटीज", "बॉर्डरलाइन शुगर"], "bn": ["প্রি-ডায়াবেটিস", "বর্ডারলাইন সুগার"]},
+      "q": {"en": "What is prediabetes? Can it be reversed?", "hi": "प्री-डायबिटीज क्या है? क्या इसे ठीक किया जा सकता है?", "bn": "প্রি-ডায়াবেটিস কী? এটা কি ঠিক করা যায়?"},
+      "a": {
+        "en": "Prediabetes means blood sugar is higher than normal but not yet diabetes. Losing a little weight, walking 150 minutes a week and eating less rice, sugar and fried food can bring it back to normal. Recheck in 3 to 6 months.",
+        "hi": "प्री-डायबिटीज का मतलब है शुगर सामान्य से ज़्यादा है, पर अभी डायबिटीज नहीं है। थोड़ा वज़न घटाने, हफ्ते में 150 मिनट चलने और चावल, चीनी व तली चीज़ें कम खाने से यह सामान्य हो सकती है। 3 से 6 महीने में दोबारा जांच कराएं।",
+        "bn": "প্রি-ডায়াবেটিস মানে রক্তে সুগার স্বাভাবিকের চেয়ে বেশি, কিন্তু এখনও ডায়াবেটিস নয়। একটু ওজন কমানো, সপ্তাহে 150 মিনিট হাঁটা এবং ভাত, চিনি ও ভাজাভুজি কম খেলে এটা স্বাভাবিক হতে পারে। 3 থেকে 6 মাস পরে আবার পরীক্ষা করান।"
+      },
+      "source": "ICMR guidelines for type 2 diabetes"
+    },
+    {
+      "id": "diabetes_food",
+      "keywords": {"en": ["diet", "what to eat", "food for diabetes", "rice"], "hi": ["क्या खाएं", "खाना", "भोजन", "चावल"], "bn": ["কী খাব", "খাবার", "ভাত"]},
+      "q": {"en": "What should I eat if I have high sugar?", "hi": "शुगर ज़्यादा हो तो क्या खाएं?", "bn": "সুগার বেশি হলে কী খাব?"},
+      "a": {
+        "en": "Fill half the plate with vegetables, a quarter with dal, egg, fish or paneer, and only a quarter with rice or roti. Choose whole grains, avoid sweets, sugary tea and cold drinks, and eat fruit whole instead of juice.",
+        "hi": "आधी थाली सब्ज़ी से भरें, चौथाई दाल, अंडा, मछली या पनीर से, और सिर्फ चौथाई चावल या रोटी से। साबुत अनाज चुनें, मिठाई, मीठी चाय और कोल्ड ड्रिंक से बचें, और जूस की जगह पूरा फल खाएं।",
+        "bn": "থালার অর্ধেক সবজি, এক-চতুর্থাংশ ডাল, ডিম, মাছ বা পনির, আর মাত্র এক-চতুর্থাংশ ভাত বা রুটি রাখুন। গোটা শস্য বেছে নিন, মিষ্টি, চিনি দেওয়া চা ও ঠান্ডা পানীয় এড়িয়ে চলুন, রসের বদলে গোটা ফল খান।"
+      },
+      "source": "ICMR-NIN dietary guidelines"
+    },
+    {
+      "id": "sugar_test",
+      "keywords": {"en": ["sugar test", "fasting", "glucose test", "hba1c"], "hi": ["शुगर जांच", "खाली पेट", "फास्टिंग"], "bn": ["সুগার পরীক্ষা", "খালি পেটে", "ফাস্টিং"]},
+      "q": {"en": "How is diabetes tested?", "hi": "डायबिटीज की जांच कैसे होती है?", "bn": "ডায়াবেটিস কীভাবে পরীক্ষা হয়?"},
+      "a": {
+        "en": "A finger-prick test can be done any time. To confirm, a fasting test is done after 8 hours without food (water is fine), or an HbA1c test. Tests are free at government health centres.",
+        "hi": "उंगली से खून की जांच कभी भी हो सकती है। पक्का करने के लिए 8 घंटे बिना खाए (पानी पी सकते हैं) फास्टिंग जांच, या HbA1c जांच होती है। सरकारी केंद्रों पर जांच मुफ्त है।",
+        "bn": "আঙুল থেকে রক্ত নিয়ে পরীক্ষা যেকোনো সময় করা যায়। নিশ্চিত হতে 8 ঘণ্টা না খেয়ে (জল খাওয়া যায়) ফাস্টিং পরীক্ষা, বা HbA1c পরীক্ষা করা হয়। সরকারি কেন্দ্রে পরীক্ষা বিনামূল্যে।"
+      },
+      "source": "NP-NCD operational guidelines"
+    },
+    {
+      "id": "anaemia",
+      "keywords": {"en": ["anaemia", "anemia", "weakness", "pale", "low hb", "iron"], "hi": ["खून की कमी", "एनीमिया", "कमज़ोरी", "आयरन"], "bn": ["রক্তাল্পতা", "অ্যানিমিয়া", "দুর্বলতা", "আয়রন", "রক্ত কম"]},
+      "q": {"en": "What is anaemia and how do I prevent it?", "hi": "खून की कमी क्या है और इससे कैसे बचें?", "bn": "রক্তাল্পতা কী এবং কীভাবে প্রতিরোধ করব?"},
+      "a": {
+        "en": "Anaemia means too little haemoglobin in the blood, which causes tiredness, breathlessness and pale eyelids. Eat green leafy vegetables, dal, eggs or meat, take the free iron-folic acid tablets, and avoid tea within an hour of meals. A finger-prick Hb test confirms it.",
+        "hi": "एनीमिया यानी खून में हीमोग्लोबिन की कमी, जिससे थकान, सांस फूलना और पलकों का पीलापन होता है। हरी पत्तेदार सब्ज़ी, दाल, अंडा या मांस खाएं, मुफ्त आयरन-फोलिक एसिड गोली लें, और खाने के एक घंटे के अंदर चाय न पिएं। उंगली से Hb जांच से पक्का होता है।",
+        "bn": "রক্তাল্পতা মানে রক্তে হিমোগ্লোবিন কম, এতে ক্লান্তি, শ্বাসকষ্ট ও চোখের পাতা ফ্যাকাশে হয়। সবুজ শাক, ডাল, ডিম বা মাংস খান, বিনামূল্যের আয়রন-ফলিক অ্যাসিড ট্যাবলেট নিন, আর খাওয়ার এক ঘণ্টার মধ্যে চা খাবেন না। আঙুলের রক্তে Hb পরীক্ষায় নিশ্চিত হয়।"
+      },
+      "source": "Anemia Mukt Bharat"
+    },
+    {
+      "id": "ifa_tablet",
+      "keywords": {"en": ["ifa", "iron tablet", "black stool", "red tablet"], "hi": ["आयरन की गोली", "लाल गोली", "काला मल"], "bn": ["আয়রন ট্যাবলেট", "লাল ট্যাবলেট", "কালো মল"]},
+      "q": {"en": "Is it normal to have black stool with iron tablets?", "hi": "आयरन की गोली से काला मल आना क्या सामान्य है?", "bn": "আয়রন ট্যাবলেটে কালো মল হওয়া কি স্বাভাবিক?"},
+      "a": {
+        "en": "Yes, black stool is normal with iron tablets. Take the tablet after food to avoid stomach upset, and keep taking it for the full course.",
+        "hi": "हां, आयरन की गोली से काला मल आना सामान्य है। पेट की तकलीफ से बचने के लिए गोली खाने के बाद लें, और पूरा कोर्स करें।",
+        "bn": "হ্যাঁ, আয়রন ট্যাবলেটে কালো মল স্বাভাবিক। পেটের অস্বস্তি এড়াতে খাওয়ার পরে ট্যাবলেট খান, এবং পুরো কোর্স শেষ করুন।"
+      },
+      "source": "Anemia Mukt Bharat"
+    },
+    {
+      "id": "tb_signs",
+      "keywords": {"en": ["tb", "tuberculosis", "cough", "two weeks", "night sweats", "weight loss"], "hi": ["टीबी", "क्षय रोग", "खांसी", "दो हफ्ते", "रात को पसीना", "वज़न कम"], "bn": ["টিবি", "যক্ষ্মা", "কাশি", "দুই সপ্তাহ", "রাতে ঘাম", "ওজন কমে"]},
+      "q": {"en": "When should I get tested for TB?", "hi": "टीबी की जांच कब करानी चाहिए?", "bn": "কখন টিবি পরীক্ষা করাব?"},
+      "a": {
+        "en": "Get a free sputum test if you have a cough for two weeks or more, fever, night sweats or weight loss, or if someone at home has TB. TB testing and treatment are free at government centres, with nutrition support under Ni-kshay Poshan Yojana.",
+        "hi": "दो हफ्ते या ज़्यादा खांसी, बुखार, रात को पसीना या वज़न कम होने पर, या घर में किसी को टीबी हो तो, बलगम की मुफ्त जांच कराएं। सरकारी केंद्रों पर टीबी की जांच और इलाज मुफ्त है, और निक्षय पोषण योजना से पोषण सहायता मिलती है।",
+        "bn": "দুই সপ্তাহ বা তার বেশি কাশি, জ্বর, রাতে ঘাম বা ওজন কমলে, অথবা বাড়িতে কারও টিবি থাকলে, বিনামূল্যে কফ পরীক্ষা করান। সরকারি কেন্দ্রে টিবির পরীক্ষা ও চিকিৎসা বিনামূল্যে, এবং নিক্ষয় পোষণ যোজনায় পুষ্টি সহায়তা পাওয়া যায়।"
+      },
+      "source": "National TB Elimination Programme"
+    },
+    {
+      "id": "tb_treatment",
+      "keywords": {"en": ["tb medicine", "tb treatment", "stop tb", "complete course"], "hi": ["टीबी की दवा", "टीबी का इलाज"], "bn": ["টিবির ওষুধ", "টিবির চিকিৎসা"]},
+      "q": {"en": "Can I stop TB medicine when I feel better?", "hi": "ठीक लगने पर क्या टीबी की दवा बंद कर सकते हैं?", "bn": "ভালো লাগলে কি টিবির ওষুধ বন্ধ করতে পারি?"},
+      "a": {
+        "en": "No. Take TB medicine every day for the full course, usually six months, even after you feel better. Stopping early can make TB come back in a form that is much harder to treat.",
+        "hi": "नहीं। ठीक लगने के बाद भी टीबी की दवा पूरे कोर्स तक, आमतौर पर छह महीने, रोज़ लें। बीच में छोड़ने से टीबी ऐसे रूप में लौट सकती है जिसका इलाज बहुत कठिन होता है।",
+        "bn": "না। ভালো লাগার পরেও টিবির ওষুধ পুরো কোর্স, সাধারণত ছয় মাস, প্রতিদিন খান। মাঝপথে বন্ধ করলে টিবি এমন রূপে ফিরতে পারে যার চিকিৎসা অনেক কঠিন।"
+      },
+      "source": "National TB Elimination Programme"
+    },
+    {
+      "id": "heart_attack",
+      "keywords": {"en": ["heart attack signs", "heart disease", "sweating", "left arm pain"], "hi": ["दिल की बीमारी", "हृदय रोग", "बाएं हाथ में दर्द"], "bn": ["হৃদরোগ", "বাঁ হাতে ব্যথা"]},
+      "q": {"en": "What are the warning signs of a heart attack?", "hi": "दिल के दौरे के चेतावनी संकेत क्या हैं?", "bn": "হার্ট অ্যাটাকের সতর্ক সংকেত কী?"},
+      "a": {
+        "en": "Chest pain or pressure, pain spreading to the arm, jaw or back, sweating, breathlessness or sudden weakness. Call 108 at once. Do not wait for the pain to pass.",
+        "hi": "सीने में दर्द या दबाव, दर्द का हाथ, जबड़े या पीठ तक फैलना, पसीना, सांस फूलना या अचानक कमज़ोरी। तुरंत 108 पर कॉल करें। दर्द के जाने का इंतज़ार न करें।",
+        "bn": "বুকে ব্যথা বা চাপ, ব্যথা হাত, চোয়াল বা পিঠে ছড়ানো, ঘাম, শ্বাসকষ্ট বা হঠাৎ দুর্বলতা। সঙ্গে সঙ্গে 108-এ ফোন করুন। ব্যথা কমার অপেক্ষা করবেন না।"
+      },
+      "source": "NP-NCD"
+    },
+    {
+      "id": "stroke",
+      "keywords": {"en": ["stroke signs", "paralysis", "recognise a stroke"], "hi": ["लकवे के लक्षण", "पक्षाघात"], "bn": ["স্ট্রোকের লক্ষণ", "পক্ষাঘাত"]},
+      "q": {"en": "How do I recognise a stroke?", "hi": "लकवे (स्ट्रोक) को कैसे पहचानें?", "bn": "স্ট্রোক কীভাবে চিনব?"},
+      "a": {
+        "en": "Remember FAST: Face drooping, Arm weakness, Speech difficulty, Time to call 108. Every minute counts; go to the hospital the ambulance takes you to.",
+        "hi": "FAST याद रखें: चेहरा टेढ़ा होना, हाथ में कमज़ोरी, बोलने में दिक्कत, तुरंत 108 पर कॉल। हर मिनट कीमती है।",
+        "bn": "FAST মনে রাখুন: মুখ বেঁকে যাওয়া, হাতে দুর্বলতা, কথা বলতে অসুবিধা, সঙ্গে সঙ্গে 108-এ ফোন। প্রতিটি মিনিট মূল্যবান।"
+      },
+      "source": "NP-NCD stroke guidance"
+    },
+    {
+      "id": "tobacco",
+      "keywords": {"en": ["quit smoking", "tobacco", "bidi", "gutkha", "khaini"], "hi": ["तंबाकू", "बीड़ी", "गुटखा", "खैनी", "सिगरेट छोड़"], "bn": ["তামাক", "বিড়ি", "গুটখা", "খৈনি", "সিগারেট ছাড়"]},
+      "q": {"en": "How can I quit tobacco?", "hi": "तंबाकू कैसे छोड़ें?", "bn": "তামাক কীভাবে ছাড়ব?"},
+      "a": {
+        "en": "Pick a quit date, remove bidis, gutkha and khaini from home, and tell your family. Call the free National Tobacco Quitline on 1800-11-2356 for counselling. Your health centre can also help.",
+        "hi": "छोड़ने की तारीख तय करें, घर से बीड़ी, गुटखा और खैनी हटा दें, और परिवार को बताएं। मुफ्त परामर्श के लिए राष्ट्रीय तंबाकू क्विटलाइन 1800-11-2356 पर कॉल करें। आपका स्वास्थ्य केंद्र भी मदद कर सकता है।",
+        "bn": "ছাড়ার একটা তারিখ ঠিক করুন, বাড়ি থেকে বিড়ি, গুটখা ও খৈনি সরিয়ে দিন, পরিবারকে জানান। বিনামূল্যে পরামর্শের জন্য জাতীয় তামাক কুইটলাইন 1800-11-2356 নম্বরে ফোন করুন। আপনার স্বাস্থ্যকেন্দ্রও সাহায্য করতে পারে।"
+      },
+      "source": "National Tobacco Control Programme"
+    },
+    {
+      "id": "exercise",
+      "keywords": {"en": ["exercise", "walking", "physical activity", "weight loss tips"], "hi": ["व्यायाम", "कसरत", "चलना", "टहलना"], "bn": ["ব্যায়াম", "হাঁটা", "শরীরচর্চা"]},
+      "q": {"en": "How much exercise do I need?", "hi": "कितना व्यायाम ज़रूरी है?", "bn": "কতটা ব্যায়াম দরকার?"},
+      "a": {
+        "en": "At least 150 minutes a week of brisk walking, cycling or field work that makes you breathe faster, for example 30 minutes on five days. Farm and house work counts if it is brisk.",
+        "hi": "हफ्ते में कम से कम 150 मिनट तेज़ चलना, साइकिल चलाना या ऐसा काम जिसमें सांस तेज़ हो, जैसे पांच दिन 30-30 मिनट। तेज़ी से किया गया खेत और घर का काम भी गिना जाता है।",
+        "bn": "সপ্তাহে অন্তত 150 মিনিট জোরে হাঁটা, সাইকেল চালানো বা এমন কাজ যাতে শ্বাস দ্রুত হয়, যেমন পাঁচ দিন 30 মিনিট করে। জোরে করা মাঠ ও ঘরের কাজও গোনা হয়।"
+      },
+      "source": "WHO physical activity guidelines"
+    },
+    {
+      "id": "teleconsult",
+      "keywords": {"en": ["teleconsult", "doctor online", "esanjeevani", "video call doctor", "talk to doctor"], "hi": ["टेली-परामर्श", "ऑनलाइन डॉक्टर", "ई-संजीवनी", "डॉक्टर से बात"], "bn": ["টেলি-পরামর্শ", "অনলাইন ডাক্তার", "ই-সঞ্জীবনী", "ডাক্তারের সাথে কথা"]},
+      "q": {"en": "How can I talk to a doctor without travelling?", "hi": "बिना यात्रा किए डॉक्टर से कैसे बात करें?", "bn": "যাতায়াত না করে ডাক্তারের সাথে কীভাবে কথা বলব?"},
+      "a": {
+        "en": "Your ASHA can book a free teleconsult. You talk to a doctor by audio or video from the nearest Ayushman Arogya Mandir, and the doctor already sees your screening results.",
+        "hi": "आपकी आशा मुफ्त टेली-परामर्श बुक कर सकती है। आप नज़दीकी आयुष्मान आरोग्य मंदिर से ऑडियो या वीडियो पर डॉक्टर से बात करते हैं, और डॉक्टर के पास आपकी जांच के नतीजे पहले से होते हैं।",
+        "bn": "আপনার আশা বিনামূল্যে টেলি-পরামর্শ বুক করতে পারেন। নিকটতম আয়ুষ্মান আরোগ্য মন্দির থেকে অডিও বা ভিডিওতে ডাক্তারের সাথে কথা বলবেন, আর ডাক্তার আগে থেকেই আপনার পরীক্ষার ফল দেখতে পান।"
+      },
+      "source": "eSanjeevani"
+    },
+    {
+      "id": "screening_who",
+      "keywords": {"en": ["who should be screened", "screening", "checkup", "age 30"], "hi": ["जांच किसकी", "स्क्रीनिंग", "30 साल"], "bn": ["কাদের পরীক্ষা", "স্ক্রিনিং", "30 বছর"]},
+      "q": {"en": "Who should get screened, and how often?", "hi": "किसकी जांच होनी चाहिए, और कितनी बार?", "bn": "কাদের পরীক্ষা করা উচিত, কতবার?"},
+      "a": {
+        "en": "Everyone aged 30 and above should be screened for blood pressure, diabetes and common cancers once a year. Your ASHA does it at home, free.",
+        "hi": "30 साल और उससे ज़्यादा उम्र के हर व्यक्ति की साल में एक बार ब्लड प्रेशर, डायबिटीज और आम कैंसर की जांच होनी चाहिए। आपकी आशा यह घर पर मुफ्त करती है।",
+        "bn": "30 বছর ও তার বেশি বয়সী সবার বছরে একবার রক্তচাপ, ডায়াবেটিস ও সাধারণ ক্যান্সারের পরীক্ষা হওয়া উচিত। আপনার আশা বাড়িতে বিনামূল্যে এটা করেন।"
+      },
+      "source": "NP-NCD population-based screening"
+    },
+    {
+      "id": "privacy",
+      "keywords": {"en": ["my data", "privacy", "consent", "who sees", "withdraw"], "hi": ["मेरा डेटा", "गोपनीयता", "सहमति"], "bn": ["আমার তথ্য", "গোপনীয়তা", "সম্মতি"]},
+      "q": {"en": "Who can see my health information?", "hi": "मेरी स्वास्थ्य जानकारी कौन देख सकता है?", "bn": "আমার স্বাস্থ্য তথ্য কে দেখতে পারে?"},
+      "a": {
+        "en": "Only the health workers caring for you: your ASHA, ANM and the doctor you are referred to. It is used for your care only. You can ask your ASHA to see your consent record or withdraw it at any time.",
+        "hi": "सिर्फ आपकी देखभाल करने वाले स्वास्थ्य कर्मी: आपकी आशा, एएनएम और जिस डॉक्टर के पास आपको भेजा गया है। इसका उपयोग सिर्फ आपकी देखभाल के लिए होता है। आप कभी भी अपनी आशा से अपनी सहमति देख या वापस ले सकते हैं।",
+        "bn": "শুধু আপনার যত্ন নেওয়া স্বাস্থ্যকর্মীরা: আপনার আশা, এএনএম এবং যে ডাক্তারের কাছে পাঠানো হয়েছে। এটা শুধু আপনার চিকিৎসার জন্য ব্যবহার হয়। যেকোনো সময় আশার কাছে আপনার সম্মতি দেখতে বা প্রত্যাহার করতে পারেন।"
+      },
+      "source": "DPDP Act 2023; ABDM consent framework"
+    },
+    {
+      "id": "pregnancy_danger",
+      "keywords": {"en": ["pregnancy danger", "pregnant headache", "swelling pregnancy", "baby not moving"], "hi": ["गर्भावस्था", "गर्भवती", "सूजन", "बच्चा नहीं हिल"], "bn": ["গর্ভাবস্থা", "গর্ভবতী", "ফোলা", "বাচ্চা নড়ছে না"]},
+      "q": {"en": "What are danger signs in pregnancy?", "hi": "गर्भावस्था के खतरे के संकेत क्या हैं?", "bn": "গর্ভাবস্থার বিপদ সংকেত কী?"},
+      "a": {
+        "en": "Bleeding, severe headache or blurred vision, fits, swelling of the face or hands, high fever, or the baby moving less. Any of these means call 108 and go to the hospital now.",
+        "hi": "खून आना, तेज़ सिरदर्द या धुंधला दिखना, दौरे, चेहरे या हाथों में सूजन, तेज़ बुखार, या बच्चे का कम हिलना। इनमें से कुछ भी हो तो 108 पर कॉल करें और तुरंत अस्पताल जाएं।",
+        "bn": "রক্তপাত, তীব্র মাথাব্যথা বা ঝাপসা দেখা, খিঁচুনি, মুখ বা হাত ফোলা, বেশি জ্বর, বা বাচ্চা কম নড়া। এর যেকোনোটি হলে 108-এ ফোন করে এখনই হাসপাতালে যান।"
+      },
+      "source": "MoHFW maternal health guidelines"
+    },
+    {
+      "id": "ambulance",
+      "keywords": {"en": ["ambulance", "108", "emergency number"], "hi": ["एम्बुलेंस", "108"], "bn": ["অ্যাম্বুলেন্স", "108"]},
+      "q": {"en": "What is the emergency number?", "hi": "आपातकालीन नंबर क्या है?", "bn": "জরুরি নম্বর কী?"},
+      "a": {
+        "en": "Dial 108 for a free government ambulance, from any phone, even without balance. Keep the patient lying down and tell your ASHA.",
+        "hi": "मुफ्त सरकारी एम्बुलेंस के लिए किसी भी फोन से 108 डायल करें, बैलेंस न हो तब भी। मरीज़ को लिटाकर रखें और अपनी आशा को बताएं।",
+        "bn": "বিনামূল্যে সরকারি অ্যাম্বুলেন্সের জন্য যেকোনো ফোন থেকে 108 ডায়াল করুন, ব্যালেন্স না থাকলেও। রোগীকে শুইয়ে রাখুন ও আশাকে জানান।"
+      },
+      "source": "National Ambulance Service"
+    }
+  ]
+}

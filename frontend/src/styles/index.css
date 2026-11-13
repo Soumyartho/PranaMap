@@ -39,9 +39,15 @@
   --color-paper: #f4efe9;
   --color-mute: #a39d97;
   --color-line: #2a2523;
+  /* App surfaces and clinical states. Risk is never colour alone: each band also has a shape. */
+  --color-surface: #0c0a0a;
+  --color-raised: #161111;
+  --color-ok: #43c486;
+  --color-warn: #f4a62a;
 
-  --font-display: "General Sans", "Arial Black", Arial, sans-serif;
-  --font-serif: "Gambetta", Georgia, "Times New Roman", serif;
+  /* Latin first, then Noto for Bengali and Devanagari (General Sans and Gambetta have no Indic glyphs). */
+  --font-display: "General Sans", "Noto Sans Bengali", "Noto Sans Devanagari", "Arial Black", Arial, sans-serif;
+  --font-serif: "Gambetta", "Noto Sans Bengali", "Noto Sans Devanagari", Georgia, "Times New Roman", serif;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -116,4 +122,51 @@
 }
 .portal [data-gp-enter] span {
   color: var(--color-signal);
+}
+
+/* Marquee (3D feature wall). */
+@theme inline {
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap))); }
+}
+@keyframes marquee-vertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-100% - var(--gap))); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-vertical {
+    animation: none;
+  }
+}
+
+/* ---------------------------------------------------------------- app */
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.55); }
+  70% { box-shadow: 0 0 0 18px rgba(255, 0, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+@keyframes pulse-amber {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+.pulse-emergency { animation: pulse-ring 1.4s ease-out infinite; }
+.pulse-amber { animation: pulse-amber 1.6s ease-in-out infinite; }
+
+/* Long lists stay cheap on 2 GB phones. */
+.cv-auto { content-visibility: auto; contain-intrinsic-size: auto 88px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-emergency, .pulse-amber { animation: none; }
+}
+
+/* Letter-spacing splits Bengali and Devanagari conjuncts apart: keep tracking for Latin only. */
+html:lang(bn) [class*="tracking-"],
+html:lang(hi) [class*="tracking-"] {
+  letter-spacing: 0 !important;
 }

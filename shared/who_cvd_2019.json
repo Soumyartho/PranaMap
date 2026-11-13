@@ -1,0 +1,101 @@
+{
+ "model": "WHO 2019 CVD risk, non-laboratory (10-year fatal + non-fatal MI and stroke)",
+ "reference": "Kaptoge S, et al. WHO CVD Risk Chart Working Group. Lancet Glob Health 2019;7(10):e1332-45. doi:10.1016/S2214-109X(19)30318-3",
+ "source": "Coefficients and GBD-2017 recalibration parameters from the R package WHORiskCalculator 1.1.0 (CRAN, MIT licence, (c) 2026 WHORiskCalculator authors); validated against its WHO Stata reference outputs.",
+ "centering": {
+  "age": 60,
+  "sbp": 120,
+  "bmi": 25
+ },
+ "valid_age": [
+  40,
+  80
+ ],
+ "chart_age": [
+  40,
+  74
+ ],
+ "coefficients": {
+  "chd": {
+   "male": {
+    "age": 0.073593,
+    "bmi": 0.0337219,
+    "sbp": 0.0133937,
+    "smoking": 0.5954767,
+    "bmi_age": -0.0010432,
+    "sbp_age": -0.0001837,
+    "smoking_age": -0.0200831,
+    "baseline_survival": 0.9544258
+   },
+   "female": {
+    "age": 0.1049418,
+    "bmi": 0.0257616,
+    "sbp": 0.016726,
+    "smoking": 1.093132,
+    "bmi_age": -0.0006537,
+    "sbp_age": -0.0001966,
+    "smoking_age": -0.0343739,
+    "baseline_survival": 0.9887124
+   }
+  },
+  "stroke": {
+   "male": {
+    "age": 0.097674,
+    "bmi": 0.0159518,
+    "sbp": 0.0227294,
+    "smoking": 0.4999862,
+    "bmi_age": -0.0003516,
+    "sbp_age": -0.0004374,
+    "smoking_age": -0.0153895,
+    "baseline_survival": 0.984826
+   },
+   "female": {
+    "age": 0.1046105,
+    "bmi": 0.0036406,
+    "sbp": 0.0216741,
+    "smoking": 0.7399405,
+    "bmi_age": -1.29e-05,
+    "sbp_age": -0.0005311,
+    "smoking_age": -0.0203997,
+    "baseline_survival": 0.9885706
+   }
+  }
+ },
+ "calibration_year": 2017,
+ "default_calibration": "south_asia",
+ "calibration": {
+  "IND": {
+   "female": {
+    "chd_cons": -0.5781767964363098,
+    "chd_slope": 0.6616988778114319,
+    "stroke_cons": -1.1726353168487549,
+    "stroke_slope": 0.556662380695343
+   },
+   "male": {
+    "chd_cons": -0.3746107816696167,
+    "chd_slope": 0.9438374638557434,
+    "stroke_cons": -1.4966683387756348,
+    "stroke_slope": 0.4970138370990753
+   }
+  },
+  "south_asia": {
+   "female": {
+    "chd_cons": -0.4299526512622833,
+    "chd_slope": 0.6976673603057861,
+    "stroke_cons": -1.056442379951477,
+    "stroke_slope": 0.5795308947563171
+   },
+   "male": {
+    "chd_cons": -0.20811593532562256,
+    "chd_slope": 0.9884583950042725,
+    "stroke_cons": -1.3655134439468384,
+    "stroke_slope": 0.5289114713668823
+   }
+  }
+ },
+ "risk_bands": {
+  "note": "WHO HEARTS categories: <10% low, 10-<20% moderate, >=20% high (treat).",
+  "moderate": 0.1,
+  "high": 0.2
+ }
+}

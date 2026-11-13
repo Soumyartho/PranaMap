@@ -6,7 +6,7 @@ import { HeroPortal } from "./sections/HeroPortal";
 import { ScrubStatement } from "./sections/ScrubStatement";
 import { LoopSection } from "./sections/LoopSection";
 import { StatsSection } from "./sections/StatsSection";
-import { FeatureRail } from "./sections/FeatureRail";
+import { FeatureWall } from "./sections/FeatureWall";
 import { AudienceSection } from "./sections/AudienceSection";
 import { ClosingPortal } from "./sections/ClosingPortal";
 import { Footer } from "./sections/Footer";
@@ -24,7 +24,7 @@ export default function LandingPage() {
         <ScrubStatement />
         <LoopSection />
         <StatsSection />
-        <FeatureRail />
+        <FeatureWall />
         <AudienceSection />
         <ClosingPortal />
       </main>

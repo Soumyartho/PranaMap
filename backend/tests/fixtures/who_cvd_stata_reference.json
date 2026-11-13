@@ -1,0 +1,2805 @@
+{
+ "note": "WHO Stata reference outputs shipped with WHORiskCalculator 1.1.0 (MIT). Each row carries the recalibration parameters the package applies to it.",
+ "rows": [
+  {
+   "age": 60.5,
+   "sex": "male",
+   "sbp": 112.0,
+   "bmi": 26.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.5332804322242737,
+    "chd_slope": 1.0043896436691284,
+    "stroke_cons": -0.4842195510864258,
+    "stroke_slope": 0.590837299823761
+   },
+   "expected": 0.0721116288209
+  },
+  {
+   "age": 78.0,
+   "sex": "male",
+   "sbp": 188.0,
+   "bmi": 39.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.746114194393158,
+    "chd_slope": 1.0037599802017212,
+    "stroke_cons": -0.4473227560520172,
+    "stroke_slope": 0.5858292579650879
+   },
+   "expected": 0.700348611204
+  },
+  {
+   "age": 45.8,
+   "sex": "male",
+   "sbp": 130.0,
+   "bmi": 22.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 1.307462453842163,
+    "chd_slope": 1.4099727869033813,
+    "stroke_cons": -0.22745497524738312,
+    "stroke_slope": 0.6883127093315125
+   },
+   "expected": 0.0714105043866
+  },
+  {
+   "age": 77.9,
+   "sex": "male",
+   "sbp": 175.0,
+   "bmi": 21.5,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.2902372479438782,
+    "chd_slope": 1.2050063610076904,
+    "stroke_cons": -0.5587368011474609,
+    "stroke_slope": 0.6166189312934875
+   },
+   "expected": 0.469743262122
+  },
+  {
+   "age": 52.5,
+   "sex": "male",
+   "sbp": 194.0,
+   "bmi": 22.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.5696058869361877,
+    "chd_slope": 1.1673098802566528,
+    "stroke_cons": -0.2936123311519623,
+    "stroke_slope": 0.8510557413101196
+   },
+   "expected": 0.255435643603
+  },
+  {
+   "age": 56.9,
+   "sex": "male",
+   "sbp": 135.0,
+   "bmi": 22.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.0884164348244667,
+    "chd_slope": 1.0906356573104858,
+    "stroke_cons": -0.9639678597450256,
+    "stroke_slope": 0.6241751313209534
+   },
+   "expected": 0.0555365075617
+  },
+  {
+   "age": 73.1,
+   "sex": "male",
+   "sbp": 193.0,
+   "bmi": 32.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.32598552107810974,
+    "chd_slope": 0.9442048668861389,
+    "stroke_cons": -0.7062790989875793,
+    "stroke_slope": 0.655902087688446
+   },
+   "expected": 0.341951258958
+  },
+  {
+   "age": 56.4,
+   "sex": "male",
+   "sbp": 188.0,
+   "bmi": 23.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.40912365913391113,
+    "chd_slope": 0.9981291890144348,
+    "stroke_cons": -0.8731335997581482,
+    "stroke_slope": 0.643275260925293
+   },
+   "expected": 0.186096133464
+  },
+  {
+   "age": 62.0,
+   "sex": "female",
+   "sbp": 112.0,
+   "bmi": 28.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.08195198327302933,
+    "chd_slope": 0.6301553845405579,
+    "stroke_cons": -0.5376012325286865,
+    "stroke_slope": 0.5690580606460571
+   },
+   "expected": 0.187074735091
+  },
+  {
+   "age": 41.1,
+   "sex": "male",
+   "sbp": 113.0,
+   "bmi": 37.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.04963786527514458,
+    "chd_slope": 0.9690310955047607,
+    "stroke_cons": -1.039351224899292,
+    "stroke_slope": 0.618857741355896
+   },
+   "expected": 0.0297466333623
+  },
+  {
+   "age": 70.1,
+   "sex": "male",
+   "sbp": 190.0,
+   "bmi": 20.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.8238641619682312,
+    "chd_slope": 0.9899106621742249,
+    "stroke_cons": -0.9321125149726868,
+    "stroke_slope": 0.5915622711181641
+   },
+   "expected": 0.190699019169
+  },
+  {
+   "age": 61.5,
+   "sex": "female",
+   "sbp": 184.0,
+   "bmi": 22.1,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.7795729041099548,
+    "chd_slope": 1.102304458618164,
+    "stroke_cons": -1.0332742929458618,
+    "stroke_slope": 0.6287448406219482
+   },
+   "expected": 0.227423737349
+  },
+  {
+   "age": 53.2,
+   "sex": "male",
+   "sbp": 182.0,
+   "bmi": 22.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.38810256123542786,
+    "chd_slope": 0.9715659618377686,
+    "stroke_cons": -0.5738139748573303,
+    "stroke_slope": 0.6894274353981018
+   },
+   "expected": 0.0982813240266
+  },
+  {
+   "age": 71.5,
+   "sex": "male",
+   "sbp": 167.0,
+   "bmi": 29.9,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 1.1350531578063965,
+    "chd_slope": 1.2637070417404175,
+    "stroke_cons": -0.22756804525852203,
+    "stroke_slope": 0.8085880875587463
+   },
+   "expected": 0.57135746094
+  },
+  {
+   "age": 52.1,
+   "sex": "female",
+   "sbp": 196.0,
+   "bmi": 28.4,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.0077459607273340225,
+    "chd_slope": 0.7990451455116272,
+    "stroke_cons": -1.0772873163223267,
+    "stroke_slope": 0.5584442019462585
+   },
+   "expected": 0.0957656520846
+  },
+  {
+   "age": 58.1,
+   "sex": "male",
+   "sbp": 142.0,
+   "bmi": 22.6,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.0371142141520977,
+    "chd_slope": 1.091894507408142,
+    "stroke_cons": -1.0181382894515991,
+    "stroke_slope": 0.6414522528648376
+   },
+   "expected": 0.109139355738
+  },
+  {
+   "age": 45.4,
+   "sex": "male",
+   "sbp": 182.0,
+   "bmi": 31.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.2309842109680176,
+    "chd_slope": 1.3483514785766602,
+    "stroke_cons": -0.36547088623046875,
+    "stroke_slope": 0.6649355292320251
+   },
+   "expected": 0.12668867047
+  },
+  {
+   "age": 56.1,
+   "sex": "male",
+   "sbp": 177.0,
+   "bmi": 30.9,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 1.5463453531265259,
+    "chd_slope": 1.3993908166885376,
+    "stroke_cons": -0.06679488718509674,
+    "stroke_slope": 0.7191810607910156
+   },
+   "expected": 0.461999682366
+  },
+  {
+   "age": 48.1,
+   "sex": "female",
+   "sbp": 144.0,
+   "bmi": 21.3,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.5603158473968506,
+    "chd_slope": 0.6998330950737,
+    "stroke_cons": -0.8781571388244629,
+    "stroke_slope": 0.5817708969116211
+   },
+   "expected": 0.0735682913089
+  },
+  {
+   "age": 50.5,
+   "sex": "female",
+   "sbp": 129.0,
+   "bmi": 28.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.4017080068588257,
+    "chd_slope": 0.7239851355552673,
+    "stroke_cons": -0.8078022599220276,
+    "stroke_slope": 0.6095243692398071
+   },
+   "expected": 0.0335625009838
+  },
+  {
+   "age": 70.0,
+   "sex": "female",
+   "sbp": 111.0,
+   "bmi": 30.5,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 2.5972049236297607,
+    "chd_slope": 1.1848543882369995,
+    "stroke_cons": -0.130735382437706,
+    "stroke_slope": 0.661339282989502
+   },
+   "expected": 0.264817118768
+  },
+  {
+   "age": 51.2,
+   "sex": "female",
+   "sbp": 195.0,
+   "bmi": 31.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.5226656198501587,
+    "chd_slope": 0.9993864893913269,
+    "stroke_cons": -0.4548204243183136,
+    "stroke_slope": 0.8328033685684204
+   },
+   "expected": 0.0718149940898
+  },
+  {
+   "age": 59.4,
+   "sex": "female",
+   "sbp": 182.0,
+   "bmi": 24.0,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.7137113213539124,
+    "chd_slope": 1.0846569538116455,
+    "stroke_cons": -0.6172828674316406,
+    "stroke_slope": 0.8198160529136658
+   },
+   "expected": 0.200693628285
+  },
+  {
+   "age": 79.2,
+   "sex": "male",
+   "sbp": 174.0,
+   "bmi": 24.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.5699226260185242,
+    "chd_slope": 0.9863123893737793,
+    "stroke_cons": -1.1485389471054077,
+    "stroke_slope": 0.5832685232162476
+   },
+   "expected": 0.271420782942
+  },
+  {
+   "age": 78.5,
+   "sex": "female",
+   "sbp": 125.0,
+   "bmi": 21.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.12961626052856445,
+    "chd_slope": 0.7386919260025024,
+    "stroke_cons": -0.5422720313072205,
+    "stroke_slope": 0.6009529829025269
+   },
+   "expected": 0.26461652397
+  },
+  {
+   "age": 69.0,
+   "sex": "female",
+   "sbp": 182.0,
+   "bmi": 25.6,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.28823360800743103,
+    "chd_slope": 0.7953784465789795,
+    "stroke_cons": -1.5015374422073364,
+    "stroke_slope": 0.5218865871429443
+   },
+   "expected": 0.228482368503
+  },
+  {
+   "age": 61.6,
+   "sex": "female",
+   "sbp": 120.0,
+   "bmi": 19.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.2579592764377594,
+    "chd_slope": 0.5479182004928589,
+    "stroke_cons": -0.30531376600265503,
+    "stroke_slope": 0.6161162853240967
+   },
+   "expected": 0.112562386889
+  },
+  {
+   "age": 51.1,
+   "sex": "female",
+   "sbp": 164.0,
+   "bmi": 24.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 1.2792232036590576,
+    "chd_slope": 1.1351244449615479,
+    "stroke_cons": -0.7755869030952454,
+    "stroke_slope": 0.5525035858154297
+   },
+   "expected": 0.154743429313
+  },
+  {
+   "age": 46.4,
+   "sex": "male",
+   "sbp": 116.0,
+   "bmi": 21.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.35182034969329834,
+    "chd_slope": 0.6897289752960205,
+    "stroke_cons": -1.0584536790847778,
+    "stroke_slope": 0.5746076107025146
+   },
+   "expected": 0.0827189133929
+  },
+  {
+   "age": 78.8,
+   "sex": "female",
+   "sbp": 145.0,
+   "bmi": 34.1,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.5487613081932068,
+    "chd_slope": 0.7521039247512817,
+    "stroke_cons": -1.3853155374526978,
+    "stroke_slope": 0.5584584474563599
+   },
+   "expected": 0.230997393224
+  },
+  {
+   "age": 60.6,
+   "sex": "female",
+   "sbp": 161.0,
+   "bmi": 23.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.8707741498947144,
+    "chd_slope": 1.273252248764038,
+    "stroke_cons": 0.12465382367372513,
+    "stroke_slope": 0.7786067724227905
+   },
+   "expected": 0.117371601969
+  },
+  {
+   "age": 44.6,
+   "sex": "male",
+   "sbp": 172.0,
+   "bmi": 20.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.13563194870948792,
+    "chd_slope": 1.1419527530670166,
+    "stroke_cons": -1.3651541471481323,
+    "stroke_slope": 0.6148510575294495
+   },
+   "expected": 0.032427771844
+  },
+  {
+   "age": 64.9,
+   "sex": "male",
+   "sbp": 192.0,
+   "bmi": 27.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.17199398577213287,
+    "chd_slope": 1.0255402326583862,
+    "stroke_cons": -0.9363686442375183,
+    "stroke_slope": 0.5846586227416992
+   },
+   "expected": 0.220899044272
+  },
+  {
+   "age": 71.1,
+   "sex": "male",
+   "sbp": 196.0,
+   "bmi": 24.6,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.6266399025917053,
+    "chd_slope": 1.2333934307098389,
+    "stroke_cons": -0.9842644929885864,
+    "stroke_slope": 0.5827570557594299
+   },
+   "expected": 0.500791154281
+  },
+  {
+   "age": 64.5,
+   "sex": "male",
+   "sbp": 176.0,
+   "bmi": 19.5,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 2.7717816829681396,
+    "chd_slope": 1.6282843351364136,
+    "stroke_cons": -0.20699986815452576,
+    "stroke_slope": 0.6413539052009583
+   },
+   "expected": 0.451138174334
+  },
+  {
+   "age": 76.7,
+   "sex": "male",
+   "sbp": 104.0,
+   "bmi": 34.0,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.42303940653800964,
+    "chd_slope": 0.9159447550773621,
+    "stroke_cons": -0.8048554062843323,
+    "stroke_slope": 0.5506623387336731
+   },
+   "expected": 0.234532420406
+  },
+  {
+   "age": 41.6,
+   "sex": "male",
+   "sbp": 139.0,
+   "bmi": 39.3,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.30043476819992065,
+    "chd_slope": 0.946277379989624,
+    "stroke_cons": -0.7451502084732056,
+    "stroke_slope": 0.6044211387634277
+   },
+   "expected": 0.107282412126
+  },
+  {
+   "age": 61.1,
+   "sex": "female",
+   "sbp": 173.0,
+   "bmi": 27.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.27713456749916077,
+    "chd_slope": 0.8277935981750488,
+    "stroke_cons": -1.4916572570800781,
+    "stroke_slope": 0.513233482837677
+   },
+   "expected": 0.155062443429
+  },
+  {
+   "age": 58.4,
+   "sex": "male",
+   "sbp": 187.0,
+   "bmi": 21.9,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.007271619513630867,
+    "chd_slope": 0.9707704782485962,
+    "stroke_cons": -0.620493471622467,
+    "stroke_slope": 0.6165704727172852
+   },
+   "expected": 0.268494214155
+  },
+  {
+   "age": 42.5,
+   "sex": "female",
+   "sbp": 102.0,
+   "bmi": 25.1,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.7782430052757263,
+    "chd_slope": 0.6678786277770996,
+    "stroke_cons": -0.8732684850692749,
+    "stroke_slope": 0.6433925032615662
+   },
+   "expected": 0.0264374592134
+  },
+  {
+   "age": 65.7,
+   "sex": "male",
+   "sbp": 140.0,
+   "bmi": 37.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.6266399025917053,
+    "chd_slope": 1.2333934307098389,
+    "stroke_cons": -0.9842644929885864,
+    "stroke_slope": 0.5827570557594299
+   },
+   "expected": 0.193176671538
+  },
+  {
+   "age": 74.1,
+   "sex": "female",
+   "sbp": 194.0,
+   "bmi": 37.9,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.5500142574310303,
+    "chd_slope": 0.7057967185974121,
+    "stroke_cons": -0.7636173367500305,
+    "stroke_slope": 0.5054248571395874
+   },
+   "expected": 0.382362923986
+  },
+  {
+   "age": 63.7,
+   "sex": "male",
+   "sbp": 193.0,
+   "bmi": 35.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.7540257573127747,
+    "chd_slope": 0.8654592037200928,
+    "stroke_cons": -0.7144541144371033,
+    "stroke_slope": 0.5574636459350586
+   },
+   "expected": 0.320207208247
+  },
+  {
+   "age": 50.4,
+   "sex": "male",
+   "sbp": 188.0,
+   "bmi": 23.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.4658350646495819,
+    "chd_slope": 1.2230013608932495,
+    "stroke_cons": -0.11291912943124771,
+    "stroke_slope": 0.7896333932876587
+   },
+   "expected": 0.11140809913
+  },
+  {
+   "age": 73.6,
+   "sex": "male",
+   "sbp": 115.0,
+   "bmi": 32.3,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.17473778128623962,
+    "chd_slope": 1.146531581878662,
+    "stroke_cons": -0.6238624453544617,
+    "stroke_slope": 0.821005642414093
+   },
+   "expected": 0.174170766224
+  },
+  {
+   "age": 60.4,
+   "sex": "male",
+   "sbp": 132.0,
+   "bmi": 29.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.07571899145841599,
+    "chd_slope": 0.8921683430671692,
+    "stroke_cons": -0.27107807993888855,
+    "stroke_slope": 0.7163612246513367
+   },
+   "expected": 0.206189486326
+  },
+  {
+   "age": 60.4,
+   "sex": "male",
+   "sbp": 193.0,
+   "bmi": 22.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.30784738063812256,
+    "chd_slope": 0.850760817527771,
+    "stroke_cons": -0.7608752250671387,
+    "stroke_slope": 0.5992874503135681
+   },
+   "expected": 0.199399481684
+  },
+  {
+   "age": 70.1,
+   "sex": "female",
+   "sbp": 192.0,
+   "bmi": 34.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.9144429564476013,
+    "chd_slope": 0.6436910629272461,
+    "stroke_cons": -0.8003979921340942,
+    "stroke_slope": 0.5370886325836182
+   },
+   "expected": 0.290931437412
+  },
+  {
+   "age": 45.9,
+   "sex": "female",
+   "sbp": 196.0,
+   "bmi": 32.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.7816177010536194,
+    "chd_slope": 1.014101505279541,
+    "stroke_cons": -0.1678311824798584,
+    "stroke_slope": 0.8615296483039856
+   },
+   "expected": 0.2113235333
+  },
+  {
+   "age": 72.8,
+   "sex": "female",
+   "sbp": 170.0,
+   "bmi": 39.3,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.08497027307748795,
+    "chd_slope": 0.8614747524261475,
+    "stroke_cons": -0.6305332183837891,
+    "stroke_slope": 0.5988336205482483
+   },
+   "expected": 0.344739908702
+  },
+  {
+   "age": 67.3,
+   "sex": "female",
+   "sbp": 171.0,
+   "bmi": 18.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.3471123278141022,
+    "chd_slope": 0.7642784118652344,
+    "stroke_cons": -1.0905512571334839,
+    "stroke_slope": 0.6075630784034729
+   },
+   "expected": 0.194604867768
+  },
+  {
+   "age": 71.5,
+   "sex": "male",
+   "sbp": 125.0,
+   "bmi": 39.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.526800811290741,
+    "chd_slope": 1.034427285194397,
+    "stroke_cons": -1.232797384262085,
+    "stroke_slope": 0.6026251912117004
+   },
+   "expected": 0.176363071109
+  },
+  {
+   "age": 47.7,
+   "sex": "female",
+   "sbp": 171.0,
+   "bmi": 33.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.2859638035297394,
+    "chd_slope": 0.8520446419715881,
+    "stroke_cons": -0.9446849822998047,
+    "stroke_slope": 0.5670002102851868
+   },
+   "expected": 0.151320688453
+  },
+  {
+   "age": 72.1,
+   "sex": "female",
+   "sbp": 126.0,
+   "bmi": 22.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.31755968928337097,
+    "chd_slope": 0.7352550029754639,
+    "stroke_cons": -0.642830491065979,
+    "stroke_slope": 0.6091979742050171
+   },
+   "expected": 0.138698457088
+  },
+  {
+   "age": 47.7,
+   "sex": "female",
+   "sbp": 184.0,
+   "bmi": 35.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.12437104433774948,
+    "chd_slope": 0.8699986338615417,
+    "stroke_cons": -1.299350380897522,
+    "stroke_slope": 0.5451349020004272
+   },
+   "expected": 0.132998039345
+  },
+  {
+   "age": 43.3,
+   "sex": "female",
+   "sbp": 160.0,
+   "bmi": 36.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.24969902634620667,
+    "chd_slope": 0.7643578052520752,
+    "stroke_cons": -0.7071276903152466,
+    "stroke_slope": 0.6177525520324707
+   },
+   "expected": 0.100261884019
+  },
+  {
+   "age": 74.2,
+   "sex": "male",
+   "sbp": 128.0,
+   "bmi": 26.5,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.5215801000595093,
+    "chd_slope": 1.0989400148391724,
+    "stroke_cons": -0.9449896216392517,
+    "stroke_slope": 0.5557208061218262
+   },
+   "expected": 0.327245797404
+  },
+  {
+   "age": 74.5,
+   "sex": "female",
+   "sbp": 115.0,
+   "bmi": 35.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.4918619692325592,
+    "chd_slope": 0.736299455165863,
+    "stroke_cons": -0.7872132062911987,
+    "stroke_slope": 0.674545407295227
+   },
+   "expected": 0.12715269706
+  },
+  {
+   "age": 75.1,
+   "sex": "male",
+   "sbp": 112.0,
+   "bmi": 29.6,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.5614510178565979,
+    "chd_slope": 0.9877609610557556,
+    "stroke_cons": -0.46491819620132446,
+    "stroke_slope": 0.6483721137046814
+   },
+   "expected": 0.369729781203
+  },
+  {
+   "age": 58.9,
+   "sex": "male",
+   "sbp": 115.0,
+   "bmi": 36.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.7705848217010498,
+    "chd_slope": 1.114908218383789,
+    "stroke_cons": -0.8021416664123535,
+    "stroke_slope": 0.6609275937080383
+   },
+   "expected": 0.115825732545
+  },
+  {
+   "age": 51.0,
+   "sex": "male",
+   "sbp": 192.0,
+   "bmi": 38.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.12113717943429947,
+    "chd_slope": 1.100494146347046,
+    "stroke_cons": -1.2737079858779907,
+    "stroke_slope": 0.6200344562530518
+   },
+   "expected": 0.127182319042
+  },
+  {
+   "age": 40.3,
+   "sex": "male",
+   "sbp": 137.0,
+   "bmi": 21.5,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.7897484302520752,
+    "chd_slope": 1.0167945623397827,
+    "stroke_cons": -0.10277580469846725,
+    "stroke_slope": 0.6706110239028931
+   },
+   "expected": 0.0975586266448
+  },
+  {
+   "age": 65.8,
+   "sex": "male",
+   "sbp": 157.0,
+   "bmi": 27.6,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.09637448936700821,
+    "chd_slope": 0.8299203515052795,
+    "stroke_cons": -0.44122809171676636,
+    "stroke_slope": 0.6929148435592651
+   },
+   "expected": 0.298677757072
+  },
+  {
+   "age": 68.8,
+   "sex": "male",
+   "sbp": 115.0,
+   "bmi": 38.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.45002785325050354,
+    "chd_slope": 1.2040337324142456,
+    "stroke_cons": -1.0269888639450073,
+    "stroke_slope": 0.5848031640052795
+   },
+   "expected": 0.232535028984
+  },
+  {
+   "age": 73.4,
+   "sex": "female",
+   "sbp": 190.0,
+   "bmi": 24.5,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.117937684059143,
+    "chd_slope": 0.9924838542938232,
+    "stroke_cons": 0.17504258453845978,
+    "stroke_slope": 0.7371091842651367
+   },
+   "expected": 0.475960672205
+  },
+  {
+   "age": 51.3,
+   "sex": "female",
+   "sbp": 199.0,
+   "bmi": 21.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.08195198327302933,
+    "chd_slope": 0.6301553845405579,
+    "stroke_cons": -0.5376012325286865,
+    "stroke_slope": 0.5690580606460571
+   },
+   "expected": 0.159022994364
+  },
+  {
+   "age": 48.6,
+   "sex": "male",
+   "sbp": 151.0,
+   "bmi": 37.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.7438997030258179,
+    "chd_slope": 0.9113606214523315,
+    "stroke_cons": -0.8106710910797119,
+    "stroke_slope": 0.670439600944519
+   },
+   "expected": 0.0597364287874
+  },
+  {
+   "age": 65.6,
+   "sex": "female",
+   "sbp": 195.0,
+   "bmi": 18.1,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.19703440368175507,
+    "chd_slope": 0.8405859470367432,
+    "stroke_cons": -1.0337038040161133,
+    "stroke_slope": 0.5574926137924194
+   },
+   "expected": 0.300443379684
+  },
+  {
+   "age": 72.2,
+   "sex": "female",
+   "sbp": 197.0,
+   "bmi": 37.7,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.2367245852947235,
+    "chd_slope": 0.7721468806266785,
+    "stroke_cons": -1.0913703441619873,
+    "stroke_slope": 0.581723690032959
+   },
+   "expected": 0.253834933883
+  },
+  {
+   "age": 78.5,
+   "sex": "female",
+   "sbp": 168.0,
+   "bmi": 21.9,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.12824013829231262,
+    "chd_slope": 0.8022412657737732,
+    "stroke_cons": -1.1485413312911987,
+    "stroke_slope": 0.5756179094314575
+   },
+   "expected": 0.323549806492
+  },
+  {
+   "age": 46.0,
+   "sex": "male",
+   "sbp": 114.0,
+   "bmi": 27.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.2931119203567505,
+    "chd_slope": 0.9542542099952698,
+    "stroke_cons": -0.410748690366745,
+    "stroke_slope": 0.6674520969390869
+   },
+   "expected": 0.0411857500577
+  },
+  {
+   "age": 59.3,
+   "sex": "female",
+   "sbp": 166.0,
+   "bmi": 37.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.2199560403823853,
+    "chd_slope": 1.1590614318847656,
+    "stroke_cons": 0.1061348095536232,
+    "stroke_slope": 0.869946300983429
+   },
+   "expected": 0.108725283499
+  },
+  {
+   "age": 75.8,
+   "sex": "female",
+   "sbp": 118.0,
+   "bmi": 18.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.3515697717666626,
+    "chd_slope": 1.02262544631958,
+    "stroke_cons": 0.17178654670715332,
+    "stroke_slope": 0.7329778671264648
+   },
+   "expected": 0.284168507375
+  },
+  {
+   "age": 56.9,
+   "sex": "male",
+   "sbp": 190.0,
+   "bmi": 35.3,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.41874969005584717,
+    "chd_slope": 0.9873045682907104,
+    "stroke_cons": -0.9688616394996643,
+    "stroke_slope": 0.543302059173584
+   },
+   "expected": 0.266071708961
+  },
+  {
+   "age": 63.6,
+   "sex": "female",
+   "sbp": 189.0,
+   "bmi": 20.1,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 1.0528115034103394,
+    "chd_slope": 1.1673998832702637,
+    "stroke_cons": 0.5836910605430603,
+    "stroke_slope": 1.0158065557479858
+   },
+   "expected": 0.364216632275
+  },
+  {
+   "age": 41.0,
+   "sex": "male",
+   "sbp": 118.0,
+   "bmi": 32.1,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.6101570129394531,
+    "chd_slope": 1.234347939491272,
+    "stroke_cons": -0.589841902256012,
+    "stroke_slope": 0.5369670391082764
+   },
+   "expected": 0.0705469081267
+  },
+  {
+   "age": 66.9,
+   "sex": "male",
+   "sbp": 135.0,
+   "bmi": 26.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.8056635856628418,
+    "chd_slope": 1.4294393062591553,
+    "stroke_cons": -0.49021023511886597,
+    "stroke_slope": 0.5905073285102844
+   },
+   "expected": 0.264472354776
+  },
+  {
+   "age": 76.8,
+   "sex": "male",
+   "sbp": 168.0,
+   "bmi": 27.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.4597010910511017,
+    "chd_slope": 0.8859586715698242,
+    "stroke_cons": -0.6691109538078308,
+    "stroke_slope": 0.5942068696022034
+   },
+   "expected": 0.367185336154
+  },
+  {
+   "age": 73.1,
+   "sex": "female",
+   "sbp": 124.0,
+   "bmi": 37.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.5492498874664307,
+    "chd_slope": 0.9074029922485352,
+    "stroke_cons": -0.7176300287246704,
+    "stroke_slope": 0.5512968301773071
+   },
+   "expected": 0.201603917635
+  },
+  {
+   "age": 75.4,
+   "sex": "female",
+   "sbp": 184.0,
+   "bmi": 31.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.02543240413069725,
+    "chd_slope": 0.8601413369178772,
+    "stroke_cons": -1.1044563055038452,
+    "stroke_slope": 0.5842323899269104
+   },
+   "expected": 0.258186769145
+  },
+  {
+   "age": 66.4,
+   "sex": "male",
+   "sbp": 151.0,
+   "bmi": 22.2,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.17494036257266998,
+    "chd_slope": 0.8936484456062317,
+    "stroke_cons": 0.16898766160011292,
+    "stroke_slope": 0.7736083269119263
+   },
+   "expected": 0.278230803883
+  },
+  {
+   "age": 49.8,
+   "sex": "female",
+   "sbp": 165.0,
+   "bmi": 21.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.41420722007751465,
+    "chd_slope": 0.7987895011901855,
+    "stroke_cons": -1.57857346534729,
+    "stroke_slope": 0.5051649212837219
+   },
+   "expected": 0.0366825894742
+  },
+  {
+   "age": 70.7,
+   "sex": "male",
+   "sbp": 146.0,
+   "bmi": 26.7,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.6768592596054077,
+    "chd_slope": 1.0016758441925049,
+    "stroke_cons": -0.4380671977996826,
+    "stroke_slope": 0.6525569558143616
+   },
+   "expected": 0.327016808024
+  },
+  {
+   "age": 48.5,
+   "sex": "female",
+   "sbp": 181.0,
+   "bmi": 27.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.8642387986183167,
+    "chd_slope": 1.088077425956726,
+    "stroke_cons": -0.14657624065876007,
+    "stroke_slope": 0.9095205664634705
+   },
+   "expected": 0.140825997045
+  },
+  {
+   "age": 73.3,
+   "sex": "female",
+   "sbp": 179.0,
+   "bmi": 25.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.0089609622955322,
+    "chd_slope": 0.9045884013175964,
+    "stroke_cons": -0.39060136675834656,
+    "stroke_slope": 0.6235114336013794
+   },
+   "expected": 0.410565587168
+  },
+  {
+   "age": 42.5,
+   "sex": "male",
+   "sbp": 180.0,
+   "bmi": 28.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.49076932668685913,
+    "chd_slope": 1.1782350540161133,
+    "stroke_cons": -0.835830569267273,
+    "stroke_slope": 0.652492880821228
+   },
+   "expected": 0.045953640851
+  },
+  {
+   "age": 73.0,
+   "sex": "female",
+   "sbp": 137.0,
+   "bmi": 24.9,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.10368899255990982,
+    "chd_slope": 0.7674817442893982,
+    "stroke_cons": -0.5541641712188721,
+    "stroke_slope": 0.6480671763420105
+   },
+   "expected": 0.276297424869
+  },
+  {
+   "age": 46.6,
+   "sex": "female",
+   "sbp": 136.0,
+   "bmi": 20.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.08497027307748795,
+    "chd_slope": 0.8614747524261475,
+    "stroke_cons": -0.6305332183837891,
+    "stroke_slope": 0.5988336205482483
+   },
+   "expected": 0.0268343290053
+  },
+  {
+   "age": 55.0,
+   "sex": "male",
+   "sbp": 124.0,
+   "bmi": 35.1,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.9859611988067627,
+    "chd_slope": 1.1779659986495972,
+    "stroke_cons": -0.20896463096141815,
+    "stroke_slope": 0.7113807797431946
+   },
+   "expected": 0.209519804308
+  },
+  {
+   "age": 52.7,
+   "sex": "male",
+   "sbp": 190.0,
+   "bmi": 31.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.06233016401529312,
+    "chd_slope": 0.9940431714057922,
+    "stroke_cons": -1.0423051118850708,
+    "stroke_slope": 0.604069173336029
+   },
+   "expected": 0.155514783028
+  },
+  {
+   "age": 67.7,
+   "sex": "female",
+   "sbp": 112.0,
+   "bmi": 37.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.5390751957893372,
+    "chd_slope": 0.6690858006477356,
+    "stroke_cons": -0.4070872962474823,
+    "stroke_slope": 0.5609771013259888
+   },
+   "expected": 0.324623539876
+  },
+  {
+   "age": 47.1,
+   "sex": "female",
+   "sbp": 136.0,
+   "bmi": 31.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.5631327629089355,
+    "chd_slope": 0.6880619525909424,
+    "stroke_cons": -0.5751796364784241,
+    "stroke_slope": 0.6184144616127014
+   },
+   "expected": 0.0783104340276
+  },
+  {
+   "age": 55.9,
+   "sex": "female",
+   "sbp": 103.0,
+   "bmi": 20.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.8857669830322266,
+    "chd_slope": 0.62930828332901,
+    "stroke_cons": -0.9037979245185852,
+    "stroke_slope": 0.6053019165992737
+   },
+   "expected": 0.0300283934287
+  },
+  {
+   "age": 40.2,
+   "sex": "male",
+   "sbp": 166.0,
+   "bmi": 24.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.07023352384567261,
+    "chd_slope": 0.8863824009895325,
+    "stroke_cons": -0.5571387410163879,
+    "stroke_slope": 0.6915925741195679
+   },
+   "expected": 0.124170886961
+  },
+  {
+   "age": 50.5,
+   "sex": "male",
+   "sbp": 196.0,
+   "bmi": 20.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.16363753378391266,
+    "chd_slope": 1.0928198099136353,
+    "stroke_cons": -0.5170481204986572,
+    "stroke_slope": 0.8113447427749634
+   },
+   "expected": 0.188228834184
+  },
+  {
+   "age": 56.8,
+   "sex": "female",
+   "sbp": 154.0,
+   "bmi": 34.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.11677289754152298,
+    "chd_slope": 0.599382758140564,
+    "stroke_cons": -0.49590355157852173,
+    "stroke_slope": 0.5810301899909973
+   },
+   "expected": 0.133310801452
+  },
+  {
+   "age": 44.2,
+   "sex": "male",
+   "sbp": 103.0,
+   "bmi": 19.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.3673427104949951,
+    "chd_slope": 1.1067712306976318,
+    "stroke_cons": -1.540877103805542,
+    "stroke_slope": 0.5427881479263306
+   },
+   "expected": 0.019741780542
+  },
+  {
+   "age": 65.3,
+   "sex": "male",
+   "sbp": 135.0,
+   "bmi": 26.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.4942687153816223,
+    "chd_slope": 0.9203606247901917,
+    "stroke_cons": -1.0843315124511719,
+    "stroke_slope": 0.46457377076148987
+   },
+   "expected": 0.127700902308
+  },
+  {
+   "age": 55.2,
+   "sex": "male",
+   "sbp": 166.0,
+   "bmi": 20.1,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.2054060995578766,
+    "chd_slope": 0.972700834274292,
+    "stroke_cons": -0.8352795243263245,
+    "stroke_slope": 0.6268187761306763
+   },
+   "expected": 0.144228500368
+  },
+  {
+   "age": 69.0,
+   "sex": "male",
+   "sbp": 116.0,
+   "bmi": 34.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.7253694534301758,
+    "chd_slope": 1.2661542892456055,
+    "stroke_cons": -0.8061753511428833,
+    "stroke_slope": 0.4588809609413147
+   },
+   "expected": 0.199510264073
+  },
+  {
+   "age": 66.2,
+   "sex": "male",
+   "sbp": 152.0,
+   "bmi": 22.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.4505983293056488,
+    "chd_slope": 1.0010305643081665,
+    "stroke_cons": -0.9659515619277954,
+    "stroke_slope": 0.6168124675750732
+   },
+   "expected": 0.166943491672
+  },
+  {
+   "age": 57.2,
+   "sex": "female",
+   "sbp": 134.0,
+   "bmi": 29.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 2.194843292236328,
+    "chd_slope": 1.2209429740905762,
+    "stroke_cons": -0.26475873589515686,
+    "stroke_slope": 0.64745032787323
+   },
+   "expected": 0.081914471596
+  },
+  {
+   "age": 74.7,
+   "sex": "male",
+   "sbp": 104.0,
+   "bmi": 23.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.14700813591480255,
+    "chd_slope": 0.7000016570091248,
+    "stroke_cons": -0.8291841149330139,
+    "stroke_slope": 0.5473816394805908
+   },
+   "expected": 0.285425818833
+  },
+  {
+   "age": 65.3,
+   "sex": "male",
+   "sbp": 178.0,
+   "bmi": 25.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.566257894039154,
+    "chd_slope": 0.8500837087631226,
+    "stroke_cons": -0.9120286703109741,
+    "stroke_slope": 0.4637782871723175
+   },
+   "expected": 0.211039007462
+  },
+  {
+   "age": 72.4,
+   "sex": "female",
+   "sbp": 129.0,
+   "bmi": 29.4,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.9128219485282898,
+    "chd_slope": 0.641505241394043,
+    "stroke_cons": -0.7562280893325806,
+    "stroke_slope": 0.5475324988365173
+   },
+   "expected": 0.138986033763
+  },
+  {
+   "age": 53.7,
+   "sex": "male",
+   "sbp": 118.0,
+   "bmi": 29.5,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.0248842965811491,
+    "chd_slope": 0.9863382577896118,
+    "stroke_cons": -0.8246465921401978,
+    "stroke_slope": 0.601941704750061
+   },
+   "expected": 0.101290525512
+  },
+  {
+   "age": 61.7,
+   "sex": "male",
+   "sbp": 166.0,
+   "bmi": 18.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.7162852883338928,
+    "chd_slope": 0.8468784689903259,
+    "stroke_cons": -0.8989264965057373,
+    "stroke_slope": 0.6143553256988525
+   },
+   "expected": 0.11102486844
+  },
+  {
+   "age": 47.9,
+   "sex": "male",
+   "sbp": 144.0,
+   "bmi": 29.4,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.8056635856628418,
+    "chd_slope": 1.4294393062591553,
+    "stroke_cons": -0.49021023511886597,
+    "stroke_slope": 0.5905073285102844
+   },
+   "expected": 0.0853398768172
+  },
+  {
+   "age": 79.8,
+   "sex": "female",
+   "sbp": 132.0,
+   "bmi": 25.0,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.39069250226020813,
+    "chd_slope": 0.7240732908248901,
+    "stroke_cons": -0.7880422472953796,
+    "stroke_slope": 0.490088552236557
+   },
+   "expected": 0.299785077882
+  },
+  {
+   "age": 49.7,
+   "sex": "male",
+   "sbp": 110.0,
+   "bmi": 22.9,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.07023352384567261,
+    "chd_slope": 0.8863824009895325,
+    "stroke_cons": -0.5571387410163879,
+    "stroke_slope": 0.6915925741195679
+   },
+   "expected": 0.0763297770834
+  },
+  {
+   "age": 50.3,
+   "sex": "male",
+   "sbp": 199.0,
+   "bmi": 18.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.05636081099510193,
+    "chd_slope": 1.0674757957458496,
+    "stroke_cons": -1.046685814857483,
+    "stroke_slope": 0.5964131355285645
+   },
+   "expected": 0.0951550483011
+  },
+  {
+   "age": 42.9,
+   "sex": "male",
+   "sbp": 159.0,
+   "bmi": 30.9,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.23113077878952026,
+    "chd_slope": 0.8558639287948608,
+    "stroke_cons": 0.09605316072702408,
+    "stroke_slope": 0.7515734434127808
+   },
+   "expected": 0.150371661509
+  },
+  {
+   "age": 50.3,
+   "sex": "female",
+   "sbp": 144.0,
+   "bmi": 26.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.08497027307748795,
+    "chd_slope": 0.8614747524261475,
+    "stroke_cons": -0.6305332183837891,
+    "stroke_slope": 0.5988336205482483
+   },
+   "expected": 0.0408750868129
+  },
+  {
+   "age": 70.5,
+   "sex": "female",
+   "sbp": 159.0,
+   "bmi": 30.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.4546087682247162,
+    "chd_slope": 0.8061462044715881,
+    "stroke_cons": -0.6872959136962891,
+    "stroke_slope": 0.620993435382843
+   },
+   "expected": 0.151509114818
+  },
+  {
+   "age": 67.9,
+   "sex": "female",
+   "sbp": 145.0,
+   "bmi": 23.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.0895363837480545,
+    "chd_slope": 0.8989516496658325,
+    "stroke_cons": 0.573980987071991,
+    "stroke_slope": 0.9386284351348877
+   },
+   "expected": 0.125411117793
+  },
+  {
+   "age": 45.1,
+   "sex": "male",
+   "sbp": 179.0,
+   "bmi": 21.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.6154910922050476,
+    "chd_slope": 1.233718752861023,
+    "stroke_cons": -1.0098708868026733,
+    "stroke_slope": 0.5802220702171326
+   },
+   "expected": 0.0633817849962
+  },
+  {
+   "age": 55.0,
+   "sex": "female",
+   "sbp": 187.0,
+   "bmi": 18.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.19975829124450684,
+    "chd_slope": 0.8928623199462891,
+    "stroke_cons": -0.5432870984077454,
+    "stroke_slope": 0.603717029094696
+   },
+   "expected": 0.206975277988
+  },
+  {
+   "age": 56.8,
+   "sex": "female",
+   "sbp": 130.0,
+   "bmi": 24.0,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.8642387986183167,
+    "chd_slope": 1.088077425956726,
+    "stroke_cons": -0.14657624065876007,
+    "stroke_slope": 0.9095205664634705
+   },
+   "expected": 0.0794621125918
+  },
+  {
+   "age": 66.6,
+   "sex": "male",
+   "sbp": 193.0,
+   "bmi": 22.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.5696058869361877,
+    "chd_slope": 1.1673098802566528,
+    "stroke_cons": -0.2936123311519623,
+    "stroke_slope": 0.8510557413101196
+   },
+   "expected": 0.431634704679
+  },
+  {
+   "age": 58.2,
+   "sex": "male",
+   "sbp": 130.0,
+   "bmi": 29.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.17199398577213287,
+    "chd_slope": 1.0255402326583862,
+    "stroke_cons": -0.9363686442375183,
+    "stroke_slope": 0.5846586227416992
+   },
+   "expected": 0.0768897012151
+  },
+  {
+   "age": 63.5,
+   "sex": "male",
+   "sbp": 164.0,
+   "bmi": 19.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.05636081099510193,
+    "chd_slope": 1.0674757957458496,
+    "stroke_cons": -1.046685814857483,
+    "stroke_slope": 0.5964131355285645
+   },
+   "expected": 0.123140665975
+  },
+  {
+   "age": 73.6,
+   "sex": "female",
+   "sbp": 194.0,
+   "bmi": 38.5,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -1.3227895498275757,
+    "chd_slope": 0.6719047427177429,
+    "stroke_cons": -1.0316492319107056,
+    "stroke_slope": 0.5978557467460632
+   },
+   "expected": 0.237275741045
+  },
+  {
+   "age": 69.1,
+   "sex": "male",
+   "sbp": 170.0,
+   "bmi": 38.5,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.061517734080553055,
+    "chd_slope": 1.0948243141174316,
+    "stroke_cons": -0.8938395380973816,
+    "stroke_slope": 0.6405266523361206
+   },
+   "expected": 0.342222234035
+  },
+  {
+   "age": 54.6,
+   "sex": "male",
+   "sbp": 105.0,
+   "bmi": 33.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.6441147923469543,
+    "chd_slope": 0.8545774817466736,
+    "stroke_cons": -0.7626720070838928,
+    "stroke_slope": 0.4869609475135803
+   },
+   "expected": 0.105789793837
+  },
+  {
+   "age": 57.9,
+   "sex": "female",
+   "sbp": 162.0,
+   "bmi": 37.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.5231110453605652,
+    "chd_slope": 0.6941493153572083,
+    "stroke_cons": -0.7608835697174072,
+    "stroke_slope": 0.48765090107917786
+   },
+   "expected": 0.197832489126
+  },
+  {
+   "age": 54.7,
+   "sex": "male",
+   "sbp": 186.0,
+   "bmi": 36.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.0248842965811491,
+    "chd_slope": 0.9863382577896118,
+    "stroke_cons": -0.8246465921401978,
+    "stroke_slope": 0.601941704750061
+   },
+   "expected": 0.186173406949
+  },
+  {
+   "age": 44.4,
+   "sex": "female",
+   "sbp": 105.0,
+   "bmi": 29.1,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.5941609740257263,
+    "chd_slope": 0.6834081411361694,
+    "stroke_cons": -0.4212970435619354,
+    "stroke_slope": 0.6664806604385376
+   },
+   "expected": 0.0395245328924
+  },
+  {
+   "age": 48.1,
+   "sex": "female",
+   "sbp": 120.0,
+   "bmi": 32.5,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.17702479660511017,
+    "chd_slope": 0.7051937580108643,
+    "stroke_cons": -0.5478570461273193,
+    "stroke_slope": 0.6016132831573486
+   },
+   "expected": 0.0359071886088
+  },
+  {
+   "age": 51.4,
+   "sex": "male",
+   "sbp": 141.0,
+   "bmi": 23.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.19253481924533844,
+    "chd_slope": 1.1729240417480469,
+    "stroke_cons": -0.5417386889457703,
+    "stroke_slope": 0.6114048957824707
+   },
+   "expected": 0.0570178835458
+  },
+  {
+   "age": 52.6,
+   "sex": "male",
+   "sbp": 139.0,
+   "bmi": 34.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.8443379998207092,
+    "chd_slope": 0.8007022738456726,
+    "stroke_cons": -1.1788833141326904,
+    "stroke_slope": 0.5948165655136108
+   },
+   "expected": 0.0630360098793
+  },
+  {
+   "age": 52.5,
+   "sex": "male",
+   "sbp": 198.0,
+   "bmi": 28.1,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 2.7717816829681396,
+    "chd_slope": 1.6282843351364136,
+    "stroke_cons": -0.20699986815452576,
+    "stroke_slope": 0.6413539052009583
+   },
+   "expected": 0.752743818794
+  },
+  {
+   "age": 63.1,
+   "sex": "female",
+   "sbp": 109.0,
+   "bmi": 32.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.2941772937774658,
+    "chd_slope": 1.0689767599105835,
+    "stroke_cons": -0.554146409034729,
+    "stroke_slope": 0.6039499640464783
+   },
+   "expected": 0.0812690489285
+  },
+  {
+   "age": 78.9,
+   "sex": "male",
+   "sbp": 118.0,
+   "bmi": 22.9,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 1.2214902639389038,
+    "chd_slope": 1.4797841310501099,
+    "stroke_cons": -0.9307687878608704,
+    "stroke_slope": 0.5891611576080322
+   },
+   "expected": 0.377460701686
+  },
+  {
+   "age": 71.0,
+   "sex": "male",
+   "sbp": 163.0,
+   "bmi": 38.5,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.20149265229701996,
+    "chd_slope": 0.847359836101532,
+    "stroke_cons": -0.7789797186851501,
+    "stroke_slope": 0.7934582233428955
+   },
+   "expected": 0.272285931815
+  },
+  {
+   "age": 71.6,
+   "sex": "male",
+   "sbp": 111.0,
+   "bmi": 27.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.40282711386680603,
+    "chd_slope": 0.8999113440513611,
+    "stroke_cons": -0.49731141328811646,
+    "stroke_slope": 0.7191750407218933
+   },
+   "expected": 0.225629857709
+  },
+  {
+   "age": 70.4,
+   "sex": "female",
+   "sbp": 162.0,
+   "bmi": 38.6,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.19975829124450684,
+    "chd_slope": 0.8928623199462891,
+    "stroke_cons": -0.5432870984077454,
+    "stroke_slope": 0.603717029094696
+   },
+   "expected": 0.337022556579
+  },
+  {
+   "age": 63.9,
+   "sex": "male",
+   "sbp": 163.0,
+   "bmi": 24.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.7603670954704285,
+    "chd_slope": 1.0037575960159302,
+    "stroke_cons": -0.36917608976364136,
+    "stroke_slope": 0.6641255617141724
+   },
+   "expected": 0.279394191757
+  },
+  {
+   "age": 76.7,
+   "sex": "female",
+   "sbp": 155.0,
+   "bmi": 32.0,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.0004382734186947346,
+    "chd_slope": 0.8343873023986816,
+    "stroke_cons": -0.6321090459823608,
+    "stroke_slope": 0.6387560367584229
+   },
+   "expected": 0.342662305854
+  },
+  {
+   "age": 67.6,
+   "sex": "male",
+   "sbp": 142.0,
+   "bmi": 36.3,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.061517734080553055,
+    "chd_slope": 1.0948243141174316,
+    "stroke_cons": -0.8938395380973816,
+    "stroke_slope": 0.6405266523361206
+   },
+   "expected": 0.232126677853
+  },
+  {
+   "age": 60.0,
+   "sex": "male",
+   "sbp": 147.0,
+   "bmi": 27.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.1741493940353394,
+    "chd_slope": 1.503440022468567,
+    "stroke_cons": -0.5265127420425415,
+    "stroke_slope": 0.7380148768424988
+   },
+   "expected": 0.100627771498
+  },
+  {
+   "age": 43.1,
+   "sex": "male",
+   "sbp": 137.0,
+   "bmi": 34.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.4819166660308838,
+    "chd_slope": 0.9138265252113342,
+    "stroke_cons": -0.8061746954917908,
+    "stroke_slope": 0.6453832983970642
+   },
+   "expected": 0.0394458595306
+  },
+  {
+   "age": 59.5,
+   "sex": "female",
+   "sbp": 139.0,
+   "bmi": 21.5,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.3663024306297302,
+    "chd_slope": 0.6786318421363831,
+    "stroke_cons": -0.5308341979980469,
+    "stroke_slope": 0.5743717551231384
+   },
+   "expected": 0.124685660523
+  },
+  {
+   "age": 48.5,
+   "sex": "female",
+   "sbp": 135.0,
+   "bmi": 34.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.6796530485153198,
+    "chd_slope": 1.0159393548965454,
+    "stroke_cons": -0.0022242916747927666,
+    "stroke_slope": 0.9200043082237244
+   },
+   "expected": 0.0191420903294
+  },
+  {
+   "age": 45.3,
+   "sex": "male",
+   "sbp": 131.0,
+   "bmi": 34.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.18411143124103546,
+    "chd_slope": 1.0539997816085815,
+    "stroke_cons": -0.853760838508606,
+    "stroke_slope": 0.6556707620620728
+   },
+   "expected": 0.0740345669553
+  },
+  {
+   "age": 60.2,
+   "sex": "male",
+   "sbp": 117.0,
+   "bmi": 23.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.23127013444900513,
+    "chd_slope": 1.0622096061706543,
+    "stroke_cons": -1.0228006839752197,
+    "stroke_slope": 0.6173129081726074
+   },
+   "expected": 0.0525842595448
+  },
+  {
+   "age": 71.4,
+   "sex": "male",
+   "sbp": 156.0,
+   "bmi": 24.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.397447794675827,
+    "chd_slope": 0.858875572681427,
+    "stroke_cons": -0.4286593794822693,
+    "stroke_slope": 0.7251265048980713
+   },
+   "expected": 0.341908607441
+  },
+  {
+   "age": 51.8,
+   "sex": "female",
+   "sbp": 161.0,
+   "bmi": 32.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.31755968928337097,
+    "chd_slope": 0.7352550029754639,
+    "stroke_cons": -0.642830491065979,
+    "stroke_slope": 0.6091979742050171
+   },
+   "expected": 0.140666105942
+  },
+  {
+   "age": 70.8,
+   "sex": "male",
+   "sbp": 155.0,
+   "bmi": 28.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 1.6074304580688477,
+    "chd_slope": 1.2811365127563477,
+    "stroke_cons": -0.5522764325141907,
+    "stroke_slope": 0.5695917010307312
+   },
+   "expected": 0.473438601406
+  },
+  {
+   "age": 61.0,
+   "sex": "female",
+   "sbp": 151.0,
+   "bmi": 29.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.22161373496055603,
+    "chd_slope": 0.544119119644165,
+    "stroke_cons": -0.6399990320205688,
+    "stroke_slope": 0.574591338634491
+   },
+   "expected": 0.153603571949
+  },
+  {
+   "age": 46.0,
+   "sex": "female",
+   "sbp": 181.0,
+   "bmi": 34.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.8229012489318848,
+    "chd_slope": 0.6044214963912964,
+    "stroke_cons": -0.7000110745429993,
+    "stroke_slope": 0.5890336036682129
+   },
+   "expected": 0.0716480422984
+  },
+  {
+   "age": 78.6,
+   "sex": "female",
+   "sbp": 191.0,
+   "bmi": 21.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.46603286266326904,
+    "chd_slope": 0.9717223048210144,
+    "stroke_cons": -0.5433865189552307,
+    "stroke_slope": 0.8392442464828491
+   },
+   "expected": 0.369373285551
+  },
+  {
+   "age": 56.1,
+   "sex": "female",
+   "sbp": 106.0,
+   "bmi": 27.6,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.49181538820266724,
+    "chd_slope": 0.9991239905357361,
+    "stroke_cons": -0.4965807795524597,
+    "stroke_slope": 0.8212867379188538
+   },
+   "expected": 0.0509302252199
+  },
+  {
+   "age": 51.8,
+   "sex": "male",
+   "sbp": 141.0,
+   "bmi": 25.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.6721926331520081,
+    "chd_slope": 0.820471465587616,
+    "stroke_cons": -0.7550011873245239,
+    "stroke_slope": 0.49433302879333496
+   },
+   "expected": 0.125757105796
+  },
+  {
+   "age": 73.9,
+   "sex": "female",
+   "sbp": 147.0,
+   "bmi": 35.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.30589884519577026,
+    "chd_slope": 0.9586989283561707,
+    "stroke_cons": 0.7419798970222473,
+    "stroke_slope": 0.939115047454834
+   },
+   "expected": 0.267338214084
+  },
+  {
+   "age": 45.0,
+   "sex": "male",
+   "sbp": 110.0,
+   "bmi": 32.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.35969653725624084,
+    "chd_slope": 1.1619278192520142,
+    "stroke_cons": -1.0529396533966064,
+    "stroke_slope": 0.603701651096344
+   },
+   "expected": 0.0250058757216
+  },
+  {
+   "age": 69.3,
+   "sex": "male",
+   "sbp": 133.0,
+   "bmi": 18.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.66798335313797,
+    "chd_slope": 1.1551282405853271,
+    "stroke_cons": -1.0673071146011353,
+    "stroke_slope": 0.5178898572921753
+   },
+   "expected": 0.174624744214
+  },
+  {
+   "age": 47.5,
+   "sex": "female",
+   "sbp": 142.0,
+   "bmi": 30.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.1907855123281479,
+    "chd_slope": 0.8668234348297119,
+    "stroke_cons": -1.0100406408309937,
+    "stroke_slope": 0.5966963171958923
+   },
+   "expected": 0.0259168250116
+  },
+  {
+   "age": 55.7,
+   "sex": "male",
+   "sbp": 104.0,
+   "bmi": 23.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.6266399025917053,
+    "chd_slope": 1.2333934307098389,
+    "stroke_cons": -0.9842644929885864,
+    "stroke_slope": 0.5827570557594299
+   },
+   "expected": 0.0400329719549
+  },
+  {
+   "age": 49.3,
+   "sex": "male",
+   "sbp": 143.0,
+   "bmi": 24.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.1498454213142395,
+    "chd_slope": 1.0901306867599487,
+    "stroke_cons": -0.9093366265296936,
+    "stroke_slope": 0.6845086812973022
+   },
+   "expected": 0.0352180190677
+  },
+  {
+   "age": 73.6,
+   "sex": "female",
+   "sbp": 110.0,
+   "bmi": 19.0,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.6322318315505981,
+    "chd_slope": 0.673323392868042,
+    "stroke_cons": -0.9203549027442932,
+    "stroke_slope": 0.6054306030273438
+   },
+   "expected": 0.151053245813
+  },
+  {
+   "age": 55.6,
+   "sex": "female",
+   "sbp": 141.0,
+   "bmi": 27.4,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.10506370663642883,
+    "chd_slope": 0.8772682547569275,
+    "stroke_cons": -0.6349432468414307,
+    "stroke_slope": 0.6323074698448181
+   },
+   "expected": 0.0486591288852
+  },
+  {
+   "age": 79.0,
+   "sex": "male",
+   "sbp": 120.0,
+   "bmi": 27.7,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.3342205286026001,
+    "chd_slope": 0.9654914736747742,
+    "stroke_cons": -0.8491942882537842,
+    "stroke_slope": 0.6298292875289917
+   },
+   "expected": 0.220395322071
+  },
+  {
+   "age": 65.0,
+   "sex": "female",
+   "sbp": 110.0,
+   "bmi": 20.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.09723742306232452,
+    "chd_slope": 0.8584244847297668,
+    "stroke_cons": -0.6792927980422974,
+    "stroke_slope": 0.6274518966674805
+   },
+   "expected": 0.0646553408707
+  },
+  {
+   "age": 67.7,
+   "sex": "male",
+   "sbp": 106.0,
+   "bmi": 36.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.6098123788833618,
+    "chd_slope": 0.9748184680938721,
+    "stroke_cons": -0.8221622109413147,
+    "stroke_slope": 0.580447793006897
+   },
+   "expected": 0.10333301807
+  },
+  {
+   "age": 60.9,
+   "sex": "male",
+   "sbp": 151.0,
+   "bmi": 29.5,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.7603670954704285,
+    "chd_slope": 1.0037575960159302,
+    "stroke_cons": -0.36917608976364136,
+    "stroke_slope": 0.6641255617141724
+   },
+   "expected": 0.229116816954
+  },
+  {
+   "age": 52.4,
+   "sex": "male",
+   "sbp": 100.0,
+   "bmi": 33.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.942811906337738,
+    "chd_slope": 1.0910859107971191,
+    "stroke_cons": -0.3518310487270355,
+    "stroke_slope": 0.6368439793586731
+   },
+   "expected": 0.0726200466836
+  },
+  {
+   "age": 55.8,
+   "sex": "male",
+   "sbp": 140.0,
+   "bmi": 23.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.526800811290741,
+    "chd_slope": 1.034427285194397,
+    "stroke_cons": -1.232797384262085,
+    "stroke_slope": 0.6026251912117004
+   },
+   "expected": 0.077328749233
+  },
+  {
+   "age": 77.6,
+   "sex": "male",
+   "sbp": 106.0,
+   "bmi": 35.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.4505983293056488,
+    "chd_slope": 1.0010305643081665,
+    "stroke_cons": -0.9659515619277954,
+    "stroke_slope": 0.6168124675750732
+   },
+   "expected": 0.170869901857
+  },
+  {
+   "age": 48.0,
+   "sex": "male",
+   "sbp": 169.0,
+   "bmi": 19.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.1539900153875351,
+    "chd_slope": 1.1169553995132446,
+    "stroke_cons": -1.060018539428711,
+    "stroke_slope": 0.5870123505592346
+   },
+   "expected": 0.0543826722767
+  },
+  {
+   "age": 79.5,
+   "sex": "female",
+   "sbp": 165.0,
+   "bmi": 24.4,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.4198145568370819,
+    "chd_slope": 0.49703672528266907,
+    "stroke_cons": -0.23634234070777893,
+    "stroke_slope": 0.635998010635376
+   },
+   "expected": 0.457423595223
+  },
+  {
+   "age": 70.3,
+   "sex": "female",
+   "sbp": 115.0,
+   "bmi": 23.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.4621015787124634,
+    "chd_slope": 0.7039516568183899,
+    "stroke_cons": -0.607332706451416,
+    "stroke_slope": 0.6234873533248901
+   },
+   "expected": 0.109352284304
+  },
+  {
+   "age": 54.4,
+   "sex": "male",
+   "sbp": 136.0,
+   "bmi": 31.3,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.5215801000595093,
+    "chd_slope": 1.0989400148391724,
+    "stroke_cons": -0.9449896216392517,
+    "stroke_slope": 0.5557208061218262
+   },
+   "expected": 0.0951087264183
+  },
+  {
+   "age": 65.7,
+   "sex": "female",
+   "sbp": 172.0,
+   "bmi": 29.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.41926315426826477,
+    "chd_slope": 0.7733030915260315,
+    "stroke_cons": -1.2880479097366333,
+    "stroke_slope": 0.5516907572746277
+   },
+   "expected": 0.115271715019
+  },
+  {
+   "age": 55.2,
+   "sex": "female",
+   "sbp": 113.0,
+   "bmi": 27.4,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.41885629296302795,
+    "chd_slope": 0.8174518942832947,
+    "stroke_cons": -1.1967458724975586,
+    "stroke_slope": 0.5216025114059448
+   },
+   "expected": 0.0310449480093
+  },
+  {
+   "age": 55.3,
+   "sex": "female",
+   "sbp": 181.0,
+   "bmi": 33.6,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.23313955962657928,
+    "chd_slope": 0.6585965156555176,
+    "stroke_cons": -0.5849827527999878,
+    "stroke_slope": 0.5671271085739136
+   },
+   "expected": 0.32132757686
+  },
+  {
+   "age": 60.2,
+   "sex": "male",
+   "sbp": 166.0,
+   "bmi": 33.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.6441147923469543,
+    "chd_slope": 0.8545774817466736,
+    "stroke_cons": -0.7626720070838928,
+    "stroke_slope": 0.4869609475135803
+   },
+   "expected": 0.175440277618
+  },
+  {
+   "age": 40.7,
+   "sex": "female",
+   "sbp": 194.0,
+   "bmi": 35.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.293096125125885,
+    "chd_slope": 0.7881899476051331,
+    "stroke_cons": -1.363351583480835,
+    "stroke_slope": 0.5611543655395508
+   },
+   "expected": 0.0447423194606
+  },
+  {
+   "age": 59.7,
+   "sex": "female",
+   "sbp": 160.0,
+   "bmi": 37.4,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.677628755569458,
+    "chd_slope": 0.6707321405410767,
+    "stroke_cons": -0.7439497113227844,
+    "stroke_slope": 0.498006671667099
+   },
+   "expected": 0.120126590277
+  },
+  {
+   "age": 78.9,
+   "sex": "male",
+   "sbp": 104.0,
+   "bmi": 38.6,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.5826660990715027,
+    "chd_slope": 0.9294062852859497,
+    "stroke_cons": -0.8537680506706238,
+    "stroke_slope": 0.6549001336097717
+   },
+   "expected": 0.218953680127
+  },
+  {
+   "age": 51.4,
+   "sex": "male",
+   "sbp": 141.0,
+   "bmi": 18.5,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.7560566067695618,
+    "chd_slope": 0.8575963973999023,
+    "stroke_cons": -1.1668099164962769,
+    "stroke_slope": 0.5662176609039307
+   },
+   "expected": 0.0425756003394
+  },
+  {
+   "age": 69.9,
+   "sex": "female",
+   "sbp": 169.0,
+   "bmi": 36.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.5231110453605652,
+    "chd_slope": 0.6941493153572083,
+    "stroke_cons": -0.7608835697174072,
+    "stroke_slope": 0.48765090107917786
+   },
+   "expected": 0.210829226048
+  },
+  {
+   "age": 57.7,
+   "sex": "female",
+   "sbp": 147.0,
+   "bmi": 37.8,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.8462937474250793,
+    "chd_slope": 0.6768925786018372,
+    "stroke_cons": -0.4227071702480316,
+    "stroke_slope": 0.717261791229248
+   },
+   "expected": 0.122661724864
+  },
+  {
+   "age": 48.4,
+   "sex": "male",
+   "sbp": 137.0,
+   "bmi": 25.6,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.4497986435890198,
+    "chd_slope": 1.138127088546753,
+    "stroke_cons": -0.0009947640355676413,
+    "stroke_slope": 0.9023582935333252
+   },
+   "expected": 0.0373399968713
+  },
+  {
+   "age": 76.2,
+   "sex": "male",
+   "sbp": 125.0,
+   "bmi": 33.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.6441147923469543,
+    "chd_slope": 0.8545774817466736,
+    "stroke_cons": -0.7626720070838928,
+    "stroke_slope": 0.4869609475135803
+   },
+   "expected": 0.234385641233
+  },
+  {
+   "age": 40.7,
+   "sex": "female",
+   "sbp": 169.0,
+   "bmi": 24.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.3663024306297302,
+    "chd_slope": 0.6786318421363831,
+    "stroke_cons": -0.5308341979980469,
+    "stroke_slope": 0.5743717551231384
+   },
+   "expected": 0.066323931166
+  },
+  {
+   "age": 52.1,
+   "sex": "female",
+   "sbp": 116.0,
+   "bmi": 19.7,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 1.9403057098388672,
+    "chd_slope": 1.2458703517913818,
+    "stroke_cons": -0.1479194313287735,
+    "stroke_slope": 0.6730600595474243
+   },
+   "expected": 0.0763619286568
+  },
+  {
+   "age": 80.0,
+   "sex": "male",
+   "sbp": 176.0,
+   "bmi": 27.6,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.03671370819211006,
+    "chd_slope": 1.1204291582107544,
+    "stroke_cons": -1.083146333694458,
+    "stroke_slope": 0.6341844201087952
+   },
+   "expected": 0.43358041685
+  },
+  {
+   "age": 50.5,
+   "sex": "female",
+   "sbp": 128.0,
+   "bmi": 18.3,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.4423195421695709,
+    "chd_slope": 0.6822022795677185,
+    "stroke_cons": -0.4117605686187744,
+    "stroke_slope": 0.5931233167648315
+   },
+   "expected": 0.134230966686
+  },
+  {
+   "age": 74.0,
+   "sex": "male",
+   "sbp": 158.0,
+   "bmi": 21.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.400179922580719,
+    "chd_slope": 0.983353853225708,
+    "stroke_cons": -0.9759055376052856,
+    "stroke_slope": 0.6079255938529968
+   },
+   "expected": 0.200126150293
+  },
+  {
+   "age": 64.2,
+   "sex": "female",
+   "sbp": 192.0,
+   "bmi": 38.2,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.35121822357177734,
+    "chd_slope": 0.8659874796867371,
+    "stroke_cons": -0.980404257774353,
+    "stroke_slope": 0.5607194304466248
+   },
+   "expected": 0.212809234108
+  },
+  {
+   "age": 72.2,
+   "sex": "female",
+   "sbp": 159.0,
+   "bmi": 37.9,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.3663024306297302,
+    "chd_slope": 0.6786318421363831,
+    "stroke_cons": -0.5308341979980469,
+    "stroke_slope": 0.5743717551231384
+   },
+   "expected": 0.340892496919
+  },
+  {
+   "age": 65.2,
+   "sex": "female",
+   "sbp": 187.0,
+   "bmi": 34.4,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.41783636808395386,
+    "chd_slope": 0.7696845531463623,
+    "stroke_cons": -1.3857529163360596,
+    "stroke_slope": 0.558881938457489
+   },
+   "expected": 0.132487598117
+  },
+  {
+   "age": 54.5,
+   "sex": "female",
+   "sbp": 109.0,
+   "bmi": 19.3,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": -0.293096125125885,
+    "chd_slope": 0.7881899476051331,
+    "stroke_cons": -1.363351583480835,
+    "stroke_slope": 0.5611543655395508
+   },
+   "expected": 0.048124905327
+  },
+  {
+   "age": 70.4,
+   "sex": "male",
+   "sbp": 151.0,
+   "bmi": 24.0,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.1539900153875351,
+    "chd_slope": 1.1169553995132446,
+    "stroke_cons": -1.060018539428711,
+    "stroke_slope": 0.5870123505592346
+   },
+   "expected": 0.252422350279
+  },
+  {
+   "age": 41.1,
+   "sex": "male",
+   "sbp": 165.0,
+   "bmi": 37.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.8034310340881348,
+    "chd_slope": 1.208812952041626,
+    "stroke_cons": -0.17170387506484985,
+    "stroke_slope": 0.8562347888946533
+   },
+   "expected": 0.0728861083454
+  },
+  {
+   "age": 57.9,
+   "sex": "female",
+   "sbp": 116.0,
+   "bmi": 32.0,
+   "smoking": true,
+   "calibration": {
+    "chd_cons": 0.7207968831062317,
+    "chd_slope": 0.7328044176101685,
+    "stroke_cons": -0.28605660796165466,
+    "stroke_slope": 0.583566427230835
+   },
+   "expected": 0.215612750595
+  },
+  {
+   "age": 54.9,
+   "sex": "male",
+   "sbp": 170.0,
+   "bmi": 37.8,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": 0.724442183971405,
+    "chd_slope": 1.2536647319793701,
+    "stroke_cons": -0.9660578966140747,
+    "stroke_slope": 0.4823395609855652
+   },
+   "expected": 0.187883452189
+  },
+  {
+   "age": 59.1,
+   "sex": "male",
+   "sbp": 166.0,
+   "bmi": 33.0,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.4750828444957733,
+    "chd_slope": 0.9332551956176758,
+    "stroke_cons": -0.7112366557121277,
+    "stroke_slope": 0.6133495569229126
+   },
+   "expected": 0.141061422169
+  },
+  {
+   "age": 45.1,
+   "sex": "female",
+   "sbp": 146.0,
+   "bmi": 18.1,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.5500142574310303,
+    "chd_slope": 0.7057967185974121,
+    "stroke_cons": -0.7636173367500305,
+    "stroke_slope": 0.5054248571395874
+   },
+   "expected": 0.0412008539079
+  },
+  {
+   "age": 48.9,
+   "sex": "male",
+   "sbp": 179.0,
+   "bmi": 30.5,
+   "smoking": false,
+   "calibration": {
+    "chd_cons": -0.5142058730125427,
+    "chd_slope": 0.94875168800354,
+    "stroke_cons": -1.0030113458633423,
+    "stroke_slope": 0.6034609079360962
+   },
+   "expected": 0.084981051364
+  }
+ ]
+}

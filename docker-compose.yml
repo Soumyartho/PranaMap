@@ -1,0 +1,27 @@
+# One command, no local Python or Node: http://localhost:8080 (demo accounts, PIN 1234).
+#   docker compose up --build
+# Synthetic data is seeded on first start into the `pranamap-data` volume;
+# `docker compose down -v` deletes it.
+services:
+  api:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    environment:
+      PRANAMAP_JWT_SECRET: ${PRANAMAP_JWT_SECRET:-change-me-to-a-long-random-string}
+      PRANAMAP_DEMO_MODE: ${PRANAMAP_DEMO_MODE:-true}
+    env_file:
+      - path: backend/.env
+        required: false
+    volumes:
+      - pranamap-data:/data
+    restart: unless-stopped
+
+  web:
+    build: { context: ., dockerfile: frontend/Dockerfile }
+    ports:
+      - "${PRANAMAP_PORT:-8080}:80"
+    depends_on:
+      api: { condition: service_healthy }
+    restart: unless-stopped
+
+volumes:
+  pranamap-data:

@@ -1,0 +1,14 @@
+[project]
+name = "pranamap-backend"
+version = "0.1.0"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+# Tells editors that backend/ is the import root (so `from app...` resolves).
+[tool.pyright]
+extraPaths = ["."]
+venvPath = "."
+venv = ".venv"

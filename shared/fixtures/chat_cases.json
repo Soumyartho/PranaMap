@@ -1,0 +1,311 @@
+[
+ {
+  "message": "my father has chest pain",
+  "lang": "en",
+  "output": {
+   "kind": "emergency",
+   "answer": "This may be an emergency. Call 108 for a free ambulance now and tell your ASHA or ANM. Do not wait for the chat.",
+   "call": "108",
+   "source": null,
+   "related": []
+  }
+ },
+ {
+  "message": "how do I test for sugar fasting",
+  "lang": "en",
+  "output": {
+   "kind": "faq",
+   "id": "sugar_test",
+   "question": "How is diabetes tested?",
+   "answer": "A finger-prick test can be done any time. To confirm, a fasting test is done after 8 hours without food (water is fine), or an HbA1c test. Tests are free at government health centres.",
+   "source": "NP-NCD operational guidelines",
+   "related": [
+    {
+     "id": "diabetes_signs",
+     "q": "What are the signs of diabetes?"
+    }
+   ]
+  }
+ },
+ {
+  "message": "what is the weather",
+  "lang": "en",
+  "output": {
+   "kind": "fallback",
+   "answer": "I don't have a safe answer for that. Please ask your ASHA, or book a free teleconsult at your nearest Ayushman Arogya Mandir.",
+   "source": null,
+   "related": [
+    {
+     "id": "bp_what",
+     "q": "What is high blood pressure?"
+    },
+    {
+     "id": "bp_lower",
+     "q": "How can I lower my blood pressure?"
+    },
+    {
+     "id": "medicine_daily",
+     "q": "Can I stop my BP or sugar medicine when I feel fine?"
+    }
+   ]
+  }
+ },
+ {
+  "message": "how much exercise do I need",
+  "lang": "en",
+  "output": {
+   "kind": "faq",
+   "id": "exercise",
+   "question": "How much exercise do I need?",
+   "answer": "At least 150 minutes a week of brisk walking, cycling or field work that makes you breathe faster, for example 30 minutes on five days. Farm and house work counts if it is brisk.",
+   "source": "WHO physical activity guidelines",
+   "related": []
+  }
+ },
+ {
+  "message": "can my family see my data",
+  "lang": "en",
+  "output": {
+   "kind": "faq",
+   "id": "privacy",
+   "question": "Who can see my health information?",
+   "answer": "Only the health workers caring for you: your ASHA, ANM and the doctor you are referred to. It is used for your care only. You can ask your ASHA to see your consent record or withdraw it at any time.",
+   "source": "DPDP Act 2023; ABDM consent framework",
+   "related": []
+  }
+ },
+ {
+  "message": "how to quit bidi",
+  "lang": "en",
+  "output": {
+   "kind": "faq",
+   "id": "tobacco",
+   "question": "How can I quit tobacco?",
+   "answer": "Pick a quit date, remove bidis, gutkha and khaini from home, and tell your family. Call the free National Tobacco Quitline on 1800-11-2356 for counselling. Your health centre can also help.",
+   "source": "National Tobacco Control Programme",
+   "related": []
+  }
+ },
+ {
+  "message": "can I stop tb medicine",
+  "lang": "en",
+  "output": {
+   "kind": "faq",
+   "id": "tb_treatment",
+   "question": "Can I stop TB medicine when I feel better?",
+   "answer": "No. Take TB medicine every day for the full course, usually six months, even after you feel better. Stopping early can make TB come back in a form that is much harder to treat.",
+   "source": "National TB Elimination Programme",
+   "related": [
+    {
+     "id": "medicine_daily",
+     "q": "Can I stop my BP or sugar medicine when I feel fine?"
+    },
+    {
+     "id": "tb_signs",
+     "q": "When should I get tested for TB?"
+    }
+   ]
+  }
+ },
+ {
+  "message": "what should I eat with high sugar",
+  "lang": "en",
+  "output": {
+   "kind": "faq",
+   "id": "diabetes_food",
+   "question": "What should I eat if I have high sugar?",
+   "answer": "Fill half the plate with vegetables, a quarter with dal, egg, fish or paneer, and only a quarter with rice or roti. Choose whole grains, avoid sweets, sugary tea and cold drinks, and eat fruit whole instead of juice.",
+   "source": "ICMR-NIN dietary guidelines",
+   "related": [
+    {
+     "id": "diabetes_signs",
+     "q": "What are the signs of diabetes?"
+    }
+   ]
+  }
+ },
+ {
+  "message": "is black stool normal with iron tablet",
+  "lang": "en",
+  "output": {
+   "kind": "faq",
+   "id": "ifa_tablet",
+   "question": "Is it normal to have black stool with iron tablets?",
+   "answer": "Yes, black stool is normal with iron tablets. Take the tablet after food to avoid stomach upset, and keep taking it for the full course.",
+   "source": "Anemia Mukt Bharat",
+   "related": [
+    {
+     "id": "anaemia",
+     "q": "What is anaemia and how do I prevent it?"
+    }
+   ]
+  }
+ },
+ {
+  "message": "खून की कमी कैसे दूर करें",
+  "lang": "hi",
+  "output": {
+   "kind": "faq",
+   "id": "anaemia",
+   "question": "खून की कमी क्या है और इससे कैसे बचें?",
+   "answer": "एनीमिया यानी खून में हीमोग्लोबिन की कमी, जिससे थकान, सांस फूलना और पलकों का पीलापन होता है। हरी पत्तेदार सब्ज़ी, दाल, अंडा या मांस खाएं, मुफ्त आयरन-फोलिक एसिड गोली लें, और खाने के एक घंटे के अंदर चाय न पिएं। उंगली से Hb जांच से पक्का होता है।",
+   "source": "Anemia Mukt Bharat",
+   "related": []
+  }
+ },
+ {
+  "message": "बीपी की दवा बंद कर सकते हैं",
+  "lang": "hi",
+  "output": {
+   "kind": "faq",
+   "id": "medicine_daily",
+   "question": "ठीक लगने पर क्या बीपी या शुगर की दवा बंद कर सकते हैं?",
+   "answer": "नहीं। ठीक लगने का मतलब अक्सर यही है कि दवा काम कर रही है। डॉक्टर से पूछे बिना दवा कभी बंद न करें। बीपी और शुगर की दवा सरकारी स्वास्थ्य केंद्र पर मुफ्त मिलती है।",
+   "source": "NP-NCD; Free Drugs Service Initiative",
+   "related": [
+    {
+     "id": "tb_treatment",
+     "q": "ठीक लगने पर क्या टीबी की दवा बंद कर सकते हैं?"
+    },
+    {
+     "id": "bp_what",
+     "q": "हाई ब्लड प्रेशर क्या है?"
+    }
+   ]
+  }
+ },
+ {
+  "message": "सीने में दर्द हो रहा है",
+  "lang": "hi",
+  "output": {
+   "kind": "emergency",
+   "answer": "यह आपातकाल हो सकता है। अभी 108 पर मुफ्त एम्बुलेंस के लिए कॉल करें और अपनी आशा या एएनएम को बताएं। चैट का इंतज़ार न करें।",
+   "call": "108",
+   "source": null,
+   "related": []
+  }
+ },
+ {
+  "message": "दो हफ्ते से खांसी है",
+  "lang": "hi",
+  "output": {
+   "kind": "faq",
+   "id": "tb_signs",
+   "question": "टीबी की जांच कब करानी चाहिए?",
+   "answer": "दो हफ्ते या ज़्यादा खांसी, बुखार, रात को पसीना या वज़न कम होने पर, या घर में किसी को टीबी हो तो, बलगम की मुफ्त जांच कराएं। सरकारी केंद्रों पर टीबी की जांच और इलाज मुफ्त है, और निक्षय पोषण योजना से पोषण सहायता मिलती है।",
+   "source": "National TB Elimination Programme",
+   "related": []
+  }
+ },
+ {
+  "message": "गुटखा कैसे छोड़ें",
+  "lang": "hi",
+  "output": {
+   "kind": "faq",
+   "id": "tobacco",
+   "question": "तंबाकू कैसे छोड़ें?",
+   "answer": "छोड़ने की तारीख तय करें, घर से बीड़ी, गुटखा और खैनी हटा दें, और परिवार को बताएं। मुफ्त परामर्श के लिए राष्ट्रीय तंबाकू क्विटलाइन 1800-11-2356 पर कॉल करें। आपका स्वास्थ्य केंद्र भी मदद कर सकता है।",
+   "source": "National Tobacco Control Programme",
+   "related": []
+  }
+ },
+ {
+  "message": "ई-संजीवनी से डॉक्टर से बात",
+  "lang": "hi",
+  "output": {
+   "kind": "faq",
+   "id": "teleconsult",
+   "question": "बिना यात्रा किए डॉक्टर से कैसे बात करें?",
+   "answer": "आपकी आशा मुफ्त टेली-परामर्श बुक कर सकती है। आप नज़दीकी आयुष्मान आरोग्य मंदिर से ऑडियो या वीडियो पर डॉक्टर से बात करते हैं, और डॉक्टर के पास आपकी जांच के नतीजे पहले से होते हैं।",
+   "source": "eSanjeevani",
+   "related": []
+  }
+ },
+ {
+  "message": "খুব তেষ্টা আর বারবার প্রস্রাব",
+  "lang": "bn",
+  "output": {
+   "kind": "faq",
+   "id": "diabetes_signs",
+   "question": "ডায়াবেটিসের লক্ষণ কী?",
+   "answer": "সাধারণ লক্ষণ: খুব তেষ্টা, বারবার প্রস্রাব, ক্লান্তি, ঘা দেরিতে শুকানো, ঝাপসা দেখা ও পায়ে ঝিনঝিন। অনেকের কোনো লক্ষণই থাকে না, তাই রক্তে সুগার পরীক্ষাই জানার একমাত্র উপায়।",
+   "source": "NP-NCD operational guidelines",
+   "related": []
+  }
+ },
+ {
+  "message": "কাশি দুই সপ্তাহ ধরে",
+  "lang": "bn",
+  "output": {
+   "kind": "faq",
+   "id": "tb_signs",
+   "question": "কখন টিবি পরীক্ষা করাব?",
+   "answer": "দুই সপ্তাহ বা তার বেশি কাশি, জ্বর, রাতে ঘাম বা ওজন কমলে, অথবা বাড়িতে কারও টিবি থাকলে, বিনামূল্যে কফ পরীক্ষা করান। সরকারি কেন্দ্রে টিবির পরীক্ষা ও চিকিৎসা বিনামূল্যে, এবং নিক্ষয় পোষণ যোজনায় পুষ্টি সহায়তা পাওয়া যায়।",
+   "source": "National TB Elimination Programme",
+   "related": []
+  }
+ },
+ {
+  "message": "বাবার বুকে ব্যথা হচ্ছে",
+  "lang": "bn",
+  "output": {
+   "kind": "emergency",
+   "answer": "এটি জরুরি অবস্থা হতে পারে। এখনই বিনামূল্যে অ্যাম্বুলেন্সের জন্য 108 নম্বরে ফোন করুন এবং আপনার আশা বা এএনএম-কে জানান। চ্যাটের জন্য অপেক্ষা করবেন না।",
+   "call": "108",
+   "source": null,
+   "related": []
+  }
+ },
+ {
+  "message": "বিপি কমাতে লবণ",
+  "lang": "bn",
+  "output": {
+   "kind": "faq",
+   "id": "bp_lower",
+   "question": "রক্তচাপ কীভাবে কমাব?",
+   "answer": "লবণ কম খান (দিনে এক চামচের কম; পাঁপড়, আচার ও প্যাকেটের নোনতা খাবার এড়িয়ে চলুন), রোজ 30 মিনিট জোরে হাঁটুন, তামাক ও মদ ছাড়ুন, ওজন ঠিক রাখুন। ওষুধ দেওয়া হলে রোজ খান।",
+   "source": "NP-NCD lifestyle advice",
+   "related": [
+    {
+     "id": "bp_what",
+     "q": "উচ্চ রক্তচাপ কী?"
+    }
+   ]
+  }
+ },
+ {
+  "message": "গর্ভবতী মায়ের পা ফোলা",
+  "lang": "bn",
+  "output": {
+   "kind": "faq",
+   "id": "pregnancy_danger",
+   "question": "গর্ভাবস্থার বিপদ সংকেত কী?",
+   "answer": "রক্তপাত, তীব্র মাথাব্যথা বা ঝাপসা দেখা, খিঁচুনি, মুখ বা হাত ফোলা, বেশি জ্বর, বা বাচ্চা কম নড়া। এর যেকোনোটি হলে 108-এ ফোন করে এখনই হাসপাতালে যান।",
+   "source": "MoHFW maternal health guidelines",
+   "related": []
+  }
+ },
+ {
+  "message": "আজ কী রান্না হবে",
+  "lang": "bn",
+  "output": {
+   "kind": "fallback",
+   "answer": "এর নিরাপদ উত্তর আমার কাছে নেই। আপনার আশাকে জিজ্ঞাসা করুন, অথবা নিকটতম আয়ুষ্মান আরোগ্য মন্দিরে বিনামূল্যে টেলি-পরামর্শ বুক করুন।",
+   "source": null,
+   "related": [
+    {
+     "id": "bp_what",
+     "q": "উচ্চ রক্তচাপ কী?"
+    },
+    {
+     "id": "bp_lower",
+     "q": "রক্তচাপ কীভাবে কমাব?"
+    },
+    {
+     "id": "medicine_daily",
+     "q": "ভালো লাগলে কি প্রেসার বা সুগারের ওষুধ বন্ধ করতে পারি?"
+    }
+   ]
+  }
+ }
+]

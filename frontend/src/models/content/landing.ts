@@ -7,14 +7,14 @@ export type FeatureIcon = "offline" | "voice" | "explain" | "flag" | "route" | "
 export type Audience = { role: string; gets: string; points: string[] };
 
 export const navLinks = [
-  { href: "#loop", label: "The loop" },
   { href: "#problem", label: "The gap" },
+  { href: "#loop", label: "The loop" },
   { href: "#features", label: "Features" },
   { href: "#who", label: "Who it serves" },
 ];
 
 export const hero = {
-  word: "PRANA",
+  word: "PranaMap",
   eyebrow: "IEMH4-HC-01 · Rural health access",
   tagline: "Early risk. The right door. Care, completed.",
   kicker: "The pitch",
@@ -122,6 +122,6 @@ export const closing = {
   front: "Where the loop closes.",
   title: "Close the loop on rural care.",
   body: "From first contact to completed care, measured by one number: the share of high-risk people who see a clinician within 14 days.",
-  primary: { href: "#top", label: "Launch the ASHA app" },
+  primary: { href: "/app", label: "Launch the app" },
   secondary: { href: "#loop", label: "See how it works" },
 };

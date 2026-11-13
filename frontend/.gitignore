@@ -1,2 +1,6 @@
 node_modules
 dist
+# end-to-end runs
+tests/e2e/.data
+test-results
+playwright-report
